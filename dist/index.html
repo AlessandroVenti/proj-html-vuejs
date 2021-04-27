@@ -19,29 +19,41 @@
 </head>
 <body>
      <div id="vueSofbox">
+
+                         <!-- NAVBAR WITH VUE -->
           <nav>
-               <img :src='"img/" + logoImage' alt="">
+               <a href="">
+                    <img :src='"img/" + logoImage' alt="">
+               </a>
 
                <div>
+                                        <!-- ICONS HIGHLIGHTED WITH VUE -->
                     <ul>
-                         <li v-for="item in navCenterList"> {{item}} </li>
-                         <li>
-                              <input type="text">
+                         <li class="listNav" v-for="item in navCenterList"> 
+                              <a @click="navEffectItem" href="#iq-about"> {{item}} </a>
+                              <div :class="{blueLine : inputNavItem}"></div> 
+                         </li>
+
+                                        <!-- SEARCHBAR AT CLICK WITH VUE -->
+
+                         <li class="search-bar" @click="navEffectInput">
+                              <input :class="{inputEffect : inputNavFlag}" type="text" placeholder="">
                               <i class="fas fa-search"></i>
                          </li>
-                         <li class="search-bar"><i class="fas fa-shopping-cart"></i></li>
-                         <li><i class="fas fa-search"></i></li>
-                         <button>Get Started</button>
+
+                                             <!-- SHOPPING CART AND COUNTER -->
+
+                         <li class="shopping-cart">
+                              <i class="fas fa-shopping-cart"></i>
+                              <div>
+                                  <span> {{shoppingCounter}} </span>
+                              </div>
+                         </li>
+                                        <!-- BUTTON AND HOVER -->
+                         <li>
+                              <button @click="increaseShoppingCart" type="submit">Get Started</button></li>
                     </ul>
                </div>
-
-               <!-- <div>
-                    <ul>
-                         <li><i class="fas fa-search"></i></li>
-                         <li><i class="fas fa-shopping-cart"></i></li>
-                         <button>Get Started</button>
-                    </ul>
-               </div> -->
           </nav>
 
      </div>
