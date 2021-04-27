@@ -152,7 +152,7 @@ body {
 
           main {
                padding-top: 70px;
-
+               background-color: rgba(255, 255, 255, 0.972);
                section.jumbotron {
                     margin: $jumbotronPadding;
                     padding: 50px;
@@ -245,7 +245,7 @@ body {
                }
 
                section.reporting-analysis {
-                    padding:  10% 20.4%;
+                    padding:  10% 20.4% 0.5% 20.4%;
 
                     div.analysis-box {
                          display: flex;
@@ -320,7 +320,139 @@ body {
 
                }
 
-               
+               section.popular-feature {
+                    position:relative;
+
+                    img {
+                         position: absolute;
+                         left: -350px;
+                         top: 0;
+                    }
+
+                    img:hover {
+                         position: absolute;
+                         transition: 2s;
+                         left: -350px;
+                         top: -100px;
+                    }
+
+                    div.flex-popular {
+                         padding: 9% 20.4%;
+
+                         div.first-part {
+                              display: flex;
+                              align-items: center;
+                              justify-content: space-between;
+
+                              div:first-child {
+                                   flex-basis: 80%;
+                                   
+                                   h2 {
+                                        font-size: 40px;
+                                        font-weight: normal;
+                                   }
+     
+                                   p {
+                                        color: #8e989f;
+                                        font-size: 20px;
+                                        line-height: 30px;
+                                        margin: 20px 0;
+                                        width: 65%;
+                                   }
+                              }
+     
+                              div:last-child {
+                                   flex-basis: 20%;
+     
+                                   button {
+                                        @include buttonDesign();
+                                        font-size: 20px;
+                                   }
+
+                                   button:hover {
+                                        transition: 1s linear;
+                                        background-color: #1e1e1e;
+                                   }
+                              }
+                         }
+
+                         ul.second-part {
+                              display: flex;
+                              justify-content: space-between;
+                              flex-wrap: wrap;
+                              list-style: none;
+
+                              li {
+                                   display: inline-block;
+                                   flex-basis: calc(100% / 4 - 20px);
+                                   padding: 20px;
+                                   margin: 20px 0;
+                                   background-color: white;
+                                   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+                                   h3 {
+                                        font-size: 20px;
+                                        font-weight: normal;  
+                                   }
+
+                                   i {
+                                        font-size: 40px;
+                                        margin: 20px 0 30px 0;
+                                   }
+                              }
+
+                              li:first-child,
+                              li:nth-child(4),
+                              li:nth-child(7) {
+                                   i {
+                                        color: #377dff;  
+                                   }
+                              }
+
+                              li:nth-child(2),
+                              li:nth-child(5),
+                              li:nth-child(8) {
+                                   i{
+                                        color: #ff796d;
+                                   }
+                              }
+
+                              li:nth-child(3),
+                              li:nth-child(6) {
+                                   i{
+                                        color: #6cdac1;
+                                   }
+                              }
+
+                              li:hover {
+                                   i {
+                                        transition: 1s;
+                                        color: white;
+                                   }
+                              }
+
+                              li:first-child:hover,
+                              li:nth-child(4):hover,
+                              li:nth-child(7):hover {
+                                   transition: 1s;
+                                   background-color: #377dff;
+                              }
+
+                              li:nth-child(3):hover,
+                              li:nth-child(6):hover {
+                                   transition: 1s;
+                                   background-color: #6cdac1;
+                              }
+
+                              li:nth-child(2):hover,
+                              li:nth-child(5):hover,
+                              li:nth-child(8):hover {
+                                   transition: 1s;
+                                   background-color: #ff796d;
+                              }
+                         }
+                    }
+               }
           }
      }
 }

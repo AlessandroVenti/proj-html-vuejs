@@ -112,6 +112,7 @@ body #vueSofbox header div ul button:hover {
 }
 body #vueSofbox main {
   padding-top: 70px;
+  background-color: rgba(255, 255, 255, 0.972);
 }
 body #vueSofbox main section.jumbotron {
   margin: 0 11%;
@@ -192,7 +193,7 @@ body #vueSofbox main section.onlineMarketing div.marketing-box div.description-m
   margin: 0 10px;
 }
 body #vueSofbox main section.reporting-analysis {
-  padding: 10% 20.4%;
+  padding: 10% 20.4% 0.5% 20.4%;
 }
 body #vueSofbox main section.reporting-analysis div.analysis-box {
   display: flex;
@@ -244,4 +245,112 @@ body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part d
 }
 body #vueSofbox main section.reporting-analysis div.analysis-box div.right-part {
   margin-top: 100px;
+}
+body #vueSofbox main section.popular-feature {
+  position: relative;
+}
+body #vueSofbox main section.popular-feature img {
+  position: absolute;
+  left: -350px;
+  top: 0;
+}
+body #vueSofbox main section.popular-feature img:hover {
+  position: absolute;
+  transition: 2s;
+  left: -350px;
+  top: -100px;
+}
+body #vueSofbox main section.popular-feature div.flex-popular {
+  padding: 9% 20.4%;
+}
+body #vueSofbox main section.popular-feature div.flex-popular div.first-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body #vueSofbox main section.popular-feature div.flex-popular div.first-part div:first-child {
+  flex-basis: 80%;
+}
+body #vueSofbox main section.popular-feature div.flex-popular div.first-part div:first-child h2 {
+  font-size: 40px;
+  font-weight: normal;
+}
+body #vueSofbox main section.popular-feature div.flex-popular div.first-part div:first-child p {
+  color: #8e989f;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 20px 0;
+  width: 65%;
+}
+body #vueSofbox main section.popular-feature div.flex-popular div.first-part div:last-child {
+  flex-basis: 20%;
+}
+body #vueSofbox main section.popular-feature div.flex-popular div.first-part div:last-child button {
+  background-color: #377dff;
+  border: 1px solid #377dff;
+  color: #ffffff;
+  padding: 13px 22px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+body #vueSofbox main section.popular-feature div.flex-popular div.first-part div:last-child button:hover {
+  transition: 1s linear;
+  background-color: #1e1e1e;
+}
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+}
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li {
+  display: inline-block;
+  flex-basis: calc(100% / 4 - 20px);
+  padding: 20px;
+  margin: 20px 0;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li h3 {
+  font-size: 20px;
+  font-weight: normal;
+}
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li i {
+  font-size: 40px;
+  margin: 20px 0 30px 0;
+}
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:first-child i,
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(4) i,
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(7) i {
+  color: #377dff;
+}
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(2) i,
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(5) i,
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(8) i {
+  color: #ff796d;
+}
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(3) i,
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(6) i {
+  color: #6cdac1;
+}
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:hover i {
+  transition: 1s;
+  color: white;
+}
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:first-child:hover,
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(4):hover,
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(7):hover {
+  transition: 1s;
+  background-color: #377dff;
+}
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(3):hover,
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(6):hover {
+  transition: 1s;
+  background-color: #6cdac1;
+}
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(2):hover,
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(5):hover,
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(8):hover {
+  transition: 1s;
+  background-color: #ff796d;
 }
