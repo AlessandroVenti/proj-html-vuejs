@@ -154,13 +154,11 @@ body #vueSofbox main section.onlineMarketing {
 }
 body #vueSofbox main section.onlineMarketing div.marketing-box {
   flex-basis: calc(100% / 3 - 20px);
-  height: 50px;
   display: flex;
   justify-content: space-between;
 }
 body #vueSofbox main section.onlineMarketing div.marketing-box div.image-marketing {
   flex-basis: 20%;
-  height: 100px;
 }
 body #vueSofbox main section.onlineMarketing div.marketing-box div.image-marketing img {
   height: 80px;
@@ -168,7 +166,6 @@ body #vueSofbox main section.onlineMarketing div.marketing-box div.image-marketi
 }
 body #vueSofbox main section.onlineMarketing div.marketing-box div.description-marketing {
   flex-basis: 80%;
-  height: 50px;
   padding-left: 20px;
 }
 body #vueSofbox main section.onlineMarketing div.marketing-box div.description-marketing h3 {
@@ -193,4 +190,58 @@ body #vueSofbox main section.onlineMarketing div.marketing-box div.description-m
 }
 body #vueSofbox main section.onlineMarketing div.marketing-box div.description-marketing ul li span {
   margin: 0 10px;
+}
+body #vueSofbox main section.reporting-analysis {
+  padding: 10% 20.4%;
+}
+body #vueSofbox main section.reporting-analysis div.analysis-box {
+  display: flex;
+  justify-content: space-between;
+}
+body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div:first-child h2 {
+  font-weight: normal;
+  font-size: 37px;
+  line-height: 55px;
+}
+body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div:first-child p {
+  color: #8e989f;
+  line-height: 30px;
+  padding: 20px 0 50px 0;
+}
+body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div.icon-and-description {
+  background-color: white;
+  padding: 15px 30px;
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div.icon-and-description img {
+  flex-basis: 10%;
+  height: 60px;
+  margin-top: 50px;
+}
+body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div.icon-and-description div {
+  padding: 0 20px;
+  flex-basis: 90%;
+}
+body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div.icon-and-description div h3 {
+  font-weight: normal;
+}
+body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div.icon-and-description div p {
+  color: #8e989f;
+  line-height: 30px;
+  padding: 20px 0 25px 0;
+}
+body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div.icon-and-description:hover {
+  transition: 1s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid #0000000d;
+}
+body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div.icon-and-description:hover h3 {
+  transition: 1s;
+  color: #377dff;
+}
+body #vueSofbox main section.reporting-analysis div.analysis-box div.right-part {
+  margin-top: 100px;
 }

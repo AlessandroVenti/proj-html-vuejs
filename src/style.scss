@@ -196,13 +196,11 @@ body {
 
                     div.marketing-box {
                          flex-basis: calc(100% / 3 - 20px);
-                         height: 50px;
                          display: flex;
                          justify-content: space-between;
 
                          div.image-marketing {
                               flex-basis: 20%;
-                              height: 100px;
 
                               img {
                                    height: 80px;
@@ -212,7 +210,6 @@ body {
 
                          div.description-marketing {
                               flex-basis: 80%;
-                              height: 50px;
                               padding-left: 20px;
 
                               h3 {
@@ -246,6 +243,84 @@ body {
                          }
                     }
                }
+
+               section.reporting-analysis {
+                    padding:  10% 20.4%;
+
+                    div.analysis-box {
+                         display: flex;
+                         justify-content: space-between;
+
+                         div.left-part {
+
+                              div:first-child {
+                                   
+                                   h2 {
+                                        font-weight: normal;
+                                        font-size: 37px;
+                                        line-height: 55px;
+                                   }
+               
+                                   p {
+                                        color: #8e989f;
+                                        line-height: 30px;
+                                        padding: 20px 0 50px 0;
+                                   }
+                              }
+               
+                              div.icon-and-description {
+                                   background-color: white;
+                                   padding: 15px 30px;
+                                   width: 100%;
+                                   font-size: 20px;
+                                   display: flex;
+                                   justify-content: flex-start;
+
+                                   img { 
+                                        flex-basis: 10%;   
+                                        height: 60px;  
+                                        margin-top: 50px;
+                                   }
+
+                                   div {
+                                        padding: 0 20px;
+                                        flex-basis: 90%;
+
+                                        h3 {
+                                             font-weight: normal;
+                                        }
+
+                                        p {
+                                        color: #8e989f;
+                                        line-height: 30px;
+                                        padding: 20px 0 25px 0 ;
+                                        }
+                                   }
+                              }
+
+                              div.icon-and-description:hover {
+                                   transition: 1s;
+                                   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                                   border: 1px solid #0000000d;
+
+                                   h3 {
+                                        transition: 1s;
+                                        color: #377dff;
+                                   }
+                              }
+                         }
+
+                         div.right-part {
+                              margin-top: 100px;
+                              
+                         }
+
+                         
+                    }
+
+               }
+
+               
           }
      }
 }
