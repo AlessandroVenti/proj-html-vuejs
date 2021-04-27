@@ -1,5 +1,14 @@
 $padding : 0 20.4%;
-$headerPadding : 0 10%;
+$jumbotronPadding : 0 11%;
+
+@mixin buttonDesign {
+     background-color: #377dff;
+     border: 1px solid #377dff;
+     color: #ffffff;
+     padding: 13px 22px;
+     border-radius: 5px;
+}
+
 * {
      margin: 0;
      padding: 0;
@@ -11,10 +20,10 @@ $headerPadding : 0 10%;
 body {
                               
      #vueSofbox {
-          background-color: blue;
+          background-color: rgba(255, 255, 255, 0.972);
 
                                                   //NAVBAR
-          nav {
+          header {
                padding: $padding;
                background-color: white;
                height: 70px;
@@ -123,18 +132,52 @@ body {
                                    //BUTTON
 
                          button {
-                              background-color: #377dff;
-                              border: 1px solid #377dff;
-                              color: #ffffff;
-                              padding: 13px 22px;
-                              font-size: 15px;
-                              border-radius: 5px;
+                              @include buttonDesign();
                               margin-left: 40px;
+                              font-size: 15px;
                          }
 
                          button:hover {
                               transition: 1s linear;
                               background-color: #1e1e1e;
+                         }
+                    }
+               }
+          }
+
+          main {
+
+               section.jumbotron {
+                    margin: $jumbotronPadding;
+                    padding: 50px;
+                    border-radius: 8px;
+                    background-color: #f2f7ff;
+                    height: 500px;
+                    display: flex;
+                    justify-content: flex-start;
+
+                    div {
+                         flex-basis: 50%;
+
+                         span {
+                              font-size: 60px;
+                              line-height: 86px;
+                         }
+
+                         p {
+                              font-size: 20px;
+                              line-height: 28px;
+                              color: #8e989f;
+                              margin: 25px 0;
+                         }
+
+                         button {
+                              @include buttonDesign();
+                              font-size: 18px;
+                         }
+
+                         img {
+                              height: 500px;
                          }
                     }
                }

@@ -7,9 +7,9 @@
 }
 
 body #vueSofbox {
-  background-color: blue;
+  background-color: rgba(255, 255, 255, 0.972);
 }
-body #vueSofbox nav {
+body #vueSofbox header {
   padding: 0 20.4%;
   background-color: white;
   height: 70px;
@@ -17,59 +17,59 @@ body #vueSofbox nav {
   justify-content: space-between;
   align-items: center;
 }
-body #vueSofbox nav a img {
+body #vueSofbox header a img {
   height: 50px;
   flex-basis: auto;
 }
-body #vueSofbox nav div ul li {
+body #vueSofbox header div ul li {
   list-style: none;
   display: inline-block;
   font-size: 17px;
   margin: 0 15px;
   line-height: 34px;
 }
-body #vueSofbox nav div ul li a {
+body #vueSofbox header div ul li a {
   color: #495057;
 }
-body #vueSofbox nav div ul li div.blueLine {
+body #vueSofbox header div ul li div.blueLine {
   border-bottom: 3px solid #377dff;
   width: 65px;
 }
-body #vueSofbox nav div ul .listNav div {
+body #vueSofbox header div ul .listNav div {
   width: 0;
   height: 1;
 }
-body #vueSofbox nav div ul .listNav:hover div {
+body #vueSofbox header div ul .listNav:hover div {
   border-bottom: 3px solid #377dff;
   transition: 0.7s linear;
   width: 65px;
 }
-body #vueSofbox nav div ul .listNav:hover a {
+body #vueSofbox header div ul .listNav:hover a {
   transition: 0.5s linear;
   color: #377dff;
 }
-body #vueSofbox nav div ul .search-bar,
-body #vueSofbox nav div ul .shopping-cart {
+body #vueSofbox header div ul .search-bar,
+body #vueSofbox header div ul .shopping-cart {
   position: relative;
 }
-body #vueSofbox nav div ul .search-bar input,
-body #vueSofbox nav div ul .shopping-cart input {
+body #vueSofbox header div ul .search-bar input,
+body #vueSofbox header div ul .shopping-cart input {
   width: 40px;
   height: 40px;
   border: 0;
 }
-body #vueSofbox nav div ul .search-bar i.fa-search,
-body #vueSofbox nav div ul .shopping-cart i.fa-search {
+body #vueSofbox header div ul .search-bar i.fa-search,
+body #vueSofbox header div ul .shopping-cart i.fa-search {
   position: absolute;
   top: 10px;
   right: 5px;
 }
-body #vueSofbox nav div ul .search-bar i.fa-shopping-cart,
-body #vueSofbox nav div ul .shopping-cart i.fa-shopping-cart {
+body #vueSofbox header div ul .search-bar i.fa-shopping-cart,
+body #vueSofbox header div ul .shopping-cart i.fa-shopping-cart {
   z-index: 9;
 }
-body #vueSofbox nav div ul .search-bar div,
-body #vueSofbox nav div ul .shopping-cart div {
+body #vueSofbox header div ul .search-bar div,
+body #vueSofbox header div ul .shopping-cart div {
   background-color: #377dff;
   border-radius: 50%;
   width: 20px;
@@ -80,29 +80,62 @@ body #vueSofbox nav div ul .shopping-cart div {
   z-index: 8;
   text-align: center;
 }
-body #vueSofbox nav div ul .search-bar div span,
-body #vueSofbox nav div ul .shopping-cart div span {
+body #vueSofbox header div ul .search-bar div span,
+body #vueSofbox header div ul .shopping-cart div span {
   color: white;
   font-size: 12px;
   position: absolute;
   top: -7px;
   right: 6px;
 }
-body #vueSofbox nav div ul .search-bar .inputEffect {
+body #vueSofbox header div ul .search-bar .inputEffect {
   border: 1px solid #377dff;
   transition: 0.3s linear;
   width: 200px;
 }
-body #vueSofbox nav div ul button {
+body #vueSofbox header div ul button {
   background-color: #377dff;
   border: 1px solid #377dff;
   color: #ffffff;
   padding: 13px 22px;
-  font-size: 15px;
   border-radius: 5px;
   margin-left: 40px;
+  font-size: 15px;
 }
-body #vueSofbox nav div ul button:hover {
+body #vueSofbox header div ul button:hover {
   transition: 1s linear;
   background-color: #1e1e1e;
+}
+body #vueSofbox main section.jumbotron {
+  margin: 0 11%;
+  padding: 50px;
+  border-radius: 8px;
+  background-color: #f2f7ff;
+  height: 500px;
+  display: flex;
+  justify-content: flex-start;
+}
+body #vueSofbox main section.jumbotron div {
+  flex-basis: 50%;
+}
+body #vueSofbox main section.jumbotron div span {
+  font-size: 60px;
+  line-height: 86px;
+}
+body #vueSofbox main section.jumbotron div p {
+  font-size: 20px;
+  line-height: 28px;
+  color: #8e989f;
+  margin: 25px 0;
+}
+body #vueSofbox main section.jumbotron div button {
+  background-color: #377dff;
+  border: 1px solid #377dff;
+  color: #ffffff;
+  padding: 13px 22px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+body #vueSofbox main section.jumbotron div img {
+  height: 500px;
 }
