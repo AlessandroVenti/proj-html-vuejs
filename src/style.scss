@@ -30,6 +30,8 @@ body {
                display: flex;
                justify-content: space-between;
                align-items: center;
+               position: fixed;
+               width: 100%;
 
                a {
 
@@ -54,12 +56,13 @@ body {
                               
                               a {
                                    color: #495057;
+
+                                   div.blueLine {
+                                        border-bottom: 3px solid #377dff;
+                                        width: 100%;
+                                   }
                               }
 
-                              div.blueLine {
-                                   border-bottom: 3px solid #377dff;
-                                   width: 65px;
-                              }
                          }
 
                          .listNav div {
@@ -71,7 +74,7 @@ body {
 
                               border-bottom: 3px solid #377dff;
                               transition: 0.7s linear;
-                              width: 65px;
+                              width: 100%;
                          }
 
                          .listNav:hover a {
@@ -89,6 +92,8 @@ body {
                                    width: 40px;
                                    height: 40px;
                                    border: 0;
+                                   font-size: 20px;
+                                   padding: 0 20px;
                               }
 
                               i.fa-search {
@@ -146,6 +151,7 @@ body {
           }
 
           main {
+               padding-top: 70px;
 
                section.jumbotron {
                     margin: $jumbotronPadding;

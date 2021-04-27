@@ -9,10 +9,10 @@ function createVueInstance() {
                navCenterList: ['Home','About us','Feature','Testimonials','Contact US'],
                // FLAG FOR INPUT IN NAV
                inputNavFlag: false,
-               // FLAG FOR ITEMS LISTED IN NAV
-               inputNavItem: false,
                // COUNTER FOR SHOPPING CART IN NAVBAR
-               shoppingCounter: 0
+               shoppingCounter: 0,
+               //Index for the condition of the blue-line
+               activeItemIndex : null
           },
 
           methods: {
@@ -30,13 +30,8 @@ function createVueInstance() {
 
                     // GENERATE EFFECT OF THE ITEMS LISTED IN NAV
 
-               navEffectItem: function() {
-                    if(this.inputNavItem == false) {
-                         this.inputNavItem = true;
-                    } else{
-                         this.inputNavItem = false;
-                    }
-                    console.log(this.inputNavItem);
+               navEffectItem: function(itemIndex) {
+                    this.activeItemIndex = itemIndex;
                },
 
                          // INCREASE THE SHOPPING COUNTER IN NAV

@@ -29,9 +29,10 @@
                <div>
                                         <!-- ICONS HIGHLIGHTED WITH VUE -->
                     <ul>
-                         <li class="listNav" v-for="item in navCenterList"> 
-                              <a @click="navEffectItem" href="#iq-about"> {{item}} </a>
-                              <div :class="{blueLine : inputNavItem}"></div> 
+                         <li class="listNav" v-for="(item, itemIndex) in navCenterList"> 
+                              <a @click="navEffectItem(itemIndex)" href="#iq-about"> {{item}}
+                                   <div :class="(activeItemIndex == itemIndex) ? 'blueLine': ''"></div> 
+                               </a> 
                          </li>
 
                                         <!-- SEARCHBAR AT CLICK WITH VUE -->

@@ -16,6 +16,8 @@ body #vueSofbox header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
 }
 body #vueSofbox header a img {
   height: 50px;
@@ -31,9 +33,9 @@ body #vueSofbox header div ul li {
 body #vueSofbox header div ul li a {
   color: #495057;
 }
-body #vueSofbox header div ul li div.blueLine {
+body #vueSofbox header div ul li a div.blueLine {
   border-bottom: 3px solid #377dff;
-  width: 65px;
+  width: 100%;
 }
 body #vueSofbox header div ul .listNav div {
   width: 0;
@@ -42,7 +44,7 @@ body #vueSofbox header div ul .listNav div {
 body #vueSofbox header div ul .listNav:hover div {
   border-bottom: 3px solid #377dff;
   transition: 0.7s linear;
-  width: 65px;
+  width: 100%;
 }
 body #vueSofbox header div ul .listNav:hover a {
   transition: 0.5s linear;
@@ -57,6 +59,8 @@ body #vueSofbox header div ul .shopping-cart input {
   width: 40px;
   height: 40px;
   border: 0;
+  font-size: 20px;
+  padding: 0 20px;
 }
 body #vueSofbox header div ul .search-bar i.fa-search,
 body #vueSofbox header div ul .shopping-cart i.fa-search {
@@ -105,6 +109,9 @@ body #vueSofbox header div ul button {
 body #vueSofbox header div ul button:hover {
   transition: 1s linear;
   background-color: #1e1e1e;
+}
+body #vueSofbox main {
+  padding-top: 70px;
 }
 body #vueSofbox main section.jumbotron {
   margin: 0 11%;
