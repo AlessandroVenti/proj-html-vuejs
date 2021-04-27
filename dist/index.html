@@ -7,7 +7,8 @@
      <!-- font awesame -->
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
      <!-- font -->
-     
+     <link rel="preconnect" href="https://fonts.gstatic.com"> 
+     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
      <!-- vue -->
      <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
      <!-- CSS -->
@@ -17,6 +18,33 @@
      <title>Sofbox</title>
 </head>
 <body>
+     <div id="vueSofbox">
+          <nav>
+               <img :src='"img/" + logoImage' alt="">
+
+               <div>
+                    <ul>
+                         <li v-for="item in navCenterList"> {{item}} </li>
+                         <li>
+                              <input type="text">
+                              <i class="fas fa-search"></i>
+                         </li>
+                         <li class="search-bar"><i class="fas fa-shopping-cart"></i></li>
+                         <li><i class="fas fa-search"></i></li>
+                         <button>Get Started</button>
+                    </ul>
+               </div>
+
+               <!-- <div>
+                    <ul>
+                         <li><i class="fas fa-search"></i></li>
+                         <li><i class="fas fa-shopping-cart"></i></li>
+                         <button>Get Started</button>
+                    </ul>
+               </div> -->
+          </nav>
+
+     </div>
      
 </body>
 </html>

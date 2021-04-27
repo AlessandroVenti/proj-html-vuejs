@@ -1,3 +1,49 @@
-body {
-  background-color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+}
+
+body #vueSofbox {
+  background-color: white;
+}
+body #vueSofbox nav {
+  padding: 0 20.4%;
+  background-color: azure;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body #vueSofbox nav img {
+  height: 50px;
+  flex-basis: auto;
+}
+body #vueSofbox nav div ul li {
+  list-style: none;
+  display: inline-block;
+  font-size: 17px;
+  margin: 0 15px;
+  line-height: 34px;
+}
+body #vueSofbox nav div ul li input {
+  width: 100px;
+  height: 40px;
+}
+body #vueSofbox nav div ul li:nth-child(2) {
+  background-color: yellow;
+}
+body #vueSofbox nav div ul button {
+  background-color: #377dff;
+  border: 1px solid #377dff;
+  color: #ffffff;
+  padding: 13px 22px;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-left: 40px;
+}
+body #vueSofbox nav div ul li:hover {
+  border-bottom: 3px solid #377dff;
+  line-height: 34px;
 }

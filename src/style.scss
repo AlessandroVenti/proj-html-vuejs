@@ -1,3 +1,69 @@
+$padding : 0 20.4%;
+$headerPadding : 0 10%;
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'PT Sans', sans-serif;
+}
+
 body {
-     background-color: red;
+
+     #vueSofbox {
+          background-color: white;
+
+          nav {
+               padding: $padding;
+               background-color: azure;
+               height: 70px;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+
+               img {
+                    height: 50px;
+                    flex-basis: auto;
+               }
+
+               div {
+
+                    ul {
+
+                         li {
+                              list-style: none;
+                              display: inline-block;
+                              font-size: 17px;
+                              margin: 0 15px;
+                              line-height: 34px;
+
+                              input {
+                                   width: 100px;
+                                   height: 40px;
+                              }
+                              
+                         }
+
+                         li:nth-child() {
+                              background-color: yellow;
+                         }
+
+                         button {
+                              background-color: #377dff;
+                              border: 1px solid #377dff;
+                              color: #ffffff;
+                              padding: 13px 22px;
+                              font-size: 15px;
+                              border-radius: 5px;
+                              margin-left: 40px;
+                         }
+
+                         li:hover {
+
+                              border-bottom: 3px solid #377dff;
+                              line-height: 34px;
+                         }
+                    }
+               }
+          }
+     }
 }
