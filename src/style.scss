@@ -9,6 +9,37 @@ $jumbotronPadding : 0 11%;
      border-radius: 5px;
 }
 
+@mixin h1Design {
+     font-size: 60px;
+     line-height: 86px;
+     font-weight: normal;
+}
+
+@mixin h2Design {
+     font-weight: normal;
+     font-size: 37px;
+     line-height: 55px;  
+}
+
+@mixin h3Design {
+     font-size: 20px;
+     line-height: 34px;
+     font-weight: normal;
+}
+
+@mixin pDesign {
+     font-size: 17px;
+     line-height: 30px;
+     color: #8e989f;
+}
+
+@mixin rowBetween {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+}
+
+
 * {
      margin: 0;
      padding: 0;
@@ -26,9 +57,9 @@ body {
           header {
                padding: $padding;
                background-color: white;
+               border-bottom: 1px solid #00000014;
                height: 70px;
-               display: flex;
-               justify-content: space-between;
+               @include rowBetween();
                align-items: center;
                position: fixed;
                width: 100%;
@@ -51,9 +82,8 @@ body {
                          li {
                               list-style: none;
                               display: inline-block;
-                              font-size: 17px;
                               margin: 0 15px;
-                              line-height: 34px;
+                              @include pDesign();
                               
                               a {
                                    color: #495057;
@@ -154,27 +184,24 @@ body {
           main {
                padding-top: 70px;
                background-color: rgba(255, 255, 255, 0.972);
+
                section.jumbotron {
                     margin: $jumbotronPadding;
                     padding: 50px;
                     border-radius: 8px;
                     background-color: #f2f7ff;
                     height: 500px;
-                    display: flex;
-                    justify-content: flex-start;
+                    @include rowBetween();
 
                     div {
                          flex-basis: 50%;
 
-                         span {
-                              font-size: 60px;
-                              line-height: 86px;
+                         h1 {
+                              @include h1Design();
                          }
 
                          p {
-                              font-size: 20px;
-                              line-height: 28px;
-                              color: #8e989f;
+                              @include pDesign();
                               margin: 25px 0;
                          }
 
@@ -197,14 +224,12 @@ body {
 
                section.onlineMarketing {
                     padding: $padding;
-                    display: flex;
-                    justify-content: space-around;
                     margin-top: 150px;
+                    @include rowBetween();
 
                     div.marketing-box {
                          flex-basis: calc(100% / 3 - 20px);
-                         display: flex;
-                         justify-content: space-between;
+                         @include rowBetween();
 
                          div.image-marketing {
                               flex-basis: 20%;
@@ -220,15 +245,11 @@ body {
                               padding-left: 20px;
 
                               h3 {
-                                   font-size: 25px;
-                                   line-height: 34px;
-                                   font-weight: normal;
+                                   @include h3Design();
                               }
 
                               p {
-                                   font-size: 17px;
-                                   line-height: 34px;
-                                   color: #8e989f;
+                                   @include pDesign();
                                    margin: 20px 0;
                               }
 
@@ -255,22 +276,18 @@ body {
                     padding:  10% 20.4% 0.5% 20.4%;
 
                     div.analysis-box {
-                         display: flex;
-                         justify-content: space-between;
+                         @include rowBetween();
 
                          div.left-part {
 
                               div:first-child {
                                    
                                    h2 {
-                                        font-weight: normal;
-                                        font-size: 37px;
-                                        line-height: 55px;
+                                        @include h2Design();
                                    }
                
                                    p {
-                                        color: #8e989f;
-                                        line-height: 30px;
+                                        @include pDesign();
                                         padding: 20px 0 50px 0;
                                    }
                               }
@@ -280,8 +297,7 @@ body {
                                    padding: 15px 30px;
                                    width: 100%;
                                    font-size: 20px;
-                                   display: flex;
-                                   justify-content: flex-start;
+                                   @include rowBetween();
 
                                    img { 
                                         flex-basis: 10%;   
@@ -294,12 +310,11 @@ body {
                                         flex-basis: 90%;
 
                                         h3 {
-                                             font-weight: normal;
+                                             @include h3Design();
                                         }
 
                                         p {
-                                        color: #8e989f;
-                                        line-height: 30px;
+                                        @include pDesign();
                                         padding: 20px 0 25px 0 ;
                                         }
                                    }
@@ -321,10 +336,7 @@ body {
                               margin-top: 100px;
                               
                          }
-
-                         
                     }
-
                }
 
                section.popular-feature {
@@ -347,22 +359,18 @@ body {
                          padding: 9% 20.4%;
 
                          div.first-part {
-                              display: flex;
+                              @include rowBetween();
                               align-items: center;
-                              justify-content: space-between;
 
                               div:first-child {
                                    flex-basis: 80%;
                                    
                                    h2 {
-                                        font-size: 40px;
-                                        font-weight: normal;
+                                        @include h2Design();
                                    }
      
                                    p {
-                                        color: #8e989f;
-                                        font-size: 20px;
-                                        line-height: 30px;
+                                        @include pDesign();
                                         margin: 20px 0;
                                         width: 65%;
                                    }
@@ -384,8 +392,7 @@ body {
                          }
 
                          ul.second-part {
-                              display: flex;
-                              justify-content: space-between;
+                              @include rowBetween();
                               flex-wrap: wrap;
                               list-style: none;
 
@@ -398,8 +405,7 @@ body {
                                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
                                    h3 {
-                                        font-size: 20px;
-                                        font-weight: normal;  
+                                        @include h3Design(); 
                                    }
 
                                    i {
@@ -432,7 +438,7 @@ body {
                               }
 
                               li:hover {
-                                   i {
+                                   i, h3 {
                                         transition: 1s;
                                         color: white;
                                    }
@@ -463,35 +469,30 @@ body {
 
                section.testimonials {
                     background-image: url(img/15.png);
-                    position: relative;
-                    z-index: 10;
-                    
-                    background-color:rgb(217, 227, 245);
                     background-size: contain;
                     background-repeat: no-repeat;
+                    background-color:rgb(217, 227, 245);
                     text-align: center;
+                    position: relative;
+                    z-index: 10;
 
                     h2 {
-                         font-weight: normal;
-                         font-size: 37px;
+                         @include h2Design();
                          padding-top: 75px;
                     }
 
                     p {
-                         color: #8e989f;
-                         font-size: 20px;
-                         line-height: 30px;   
+                         @include pDesign(); 
                          padding: 20px 0 100px 0;
                          width: 30%;
                          margin: auto;
                     }
 
                     div.testimonials-box {
-                         display: flex;
-                         justify-content: center;
+                         padding: $padding;
+                         @include rowBetween();
 
                          div {
-                              margin-right: 20px;
                               width: 500px;
                               height: 345px;
                               background-color: rgb(253, 252, 252);
@@ -533,20 +534,14 @@ body {
                                    p {
                                         width: 100%;
                                    }
-
-                                   
                               }
                          }
                     }
 
                     i {
-                         margin-top: 10px;
+                         margin-top: 20px;
                          font-size: 10px;
                          color: blue;
-                    }
-
-                    i:last-child {
-                         margin-right: 20px;
                     }
                }
 
@@ -566,19 +561,16 @@ body {
                     text-align: center;
 
                     h2 {
-                         font-size: 37px;
-                         font-weight: normal;
+                         @include h2Design();
                          margin-bottom: 30px;
                     }
 
                     p {
-                         color: #8e989f;
-                         font-size: 20px;
+                         @include pDesign();
                     }
 
                     div {
-                         display: flex;
-                         justify-content: space-between;
+                         @include rowBetween();
                          margin-top: 50px;
 
                          div {
@@ -608,14 +600,12 @@ body {
                               }
 
                               h3 {
-                                   font-weight: normal;
-                                   font-size: 22px;
+                                   @include h3Design();
                                    margin: 15px 0;
                               }
 
                               p {
-                                   font-size: 18px;
-                                   line-height: 30px;
+                                   @include pDesign();
                               }
                          }
                     }
@@ -627,19 +617,16 @@ body {
                     border-bottom: 1px solid #00000014;
 
                     h2 {
-                         font-weight: normal;
-                         font-size: 37px;
+                        @include h2Design();
                     }
 
                     p {
-                         color: #8e989f;
-                         font-size: 20px;
+                         @include pDesign();
                          padding: 15px 0 30px 0;
                     }
 
                     div {
-                         display: flex;
-                         justify-content: space-between;
+                         @include rowBetween();
 
                          div {
                               flex-basis: calc(50% - 20px);
@@ -662,7 +649,7 @@ body {
                                    position: absolute;
                                    top: 0;
                                    left: 0;
-                                   display: flex;
+                                   @include rowBetween();
 
                                    div:first-child {
                                         flex-basis: 90%;
@@ -671,6 +658,7 @@ body {
                                         h5 {
                                              font-weight: normal;
                                              color: #8e989f;
+                                             font-size: 13px;
                                              margin-bottom: 30px;
                                         }
 
@@ -726,6 +714,7 @@ body {
                                    right: 10px;
                                    display: flex;
                                    flex-direction: column;
+                                   justify-content: space-between;
                                    background-color: white;
 
                                    i:first-child {
@@ -766,15 +755,13 @@ body {
                               }
 
                               h4 {
-                                   font-size: 20px;
-                                   font-weight: normal;
+                                   @include h3Design();
                                    margin-bottom: 40px;
                               }
 
                               h5, h6 {
-                                   font-size: 18px;
+                                   @include pDesign();
                                    font-weight: normal;
-                                   color: #8e989f;
                               }
 
                               h6 {
@@ -793,16 +780,16 @@ body {
 
                               h3 {
                                    font-weight: normal;
-                                   font-size: 30px;
+                                   font-size: 23px;
                               }
 
                               form {
                                    display: flex;
                                    flex-direction: column;
-                                   justify-content: flex-start;
+                                   justify-content: between;
 
                                    input, textarea {
-                                        font-size: 15px;
+                                        @include pDesign();
                                         padding: 10px;
                                         margin: 10px 0;
                                         border: 2px solid #eff1fe;
@@ -827,22 +814,19 @@ body {
 
           footer {
                padding: 40px 20.4%;
-               display: flex;
-               justify-content: space-between;
-
+               @include rowBetween();
+               
                div {
                     flex-basis: calc(100% / 4 - 80px);
 
                     p,h6 {
-                         color: #8e989f;
-                         font-size: 18px;
-                         line-height: 30px;
+                         @include pDesign();
                          margin-bottom: 50px;
                          font-weight: normal;
                     }
 
                     p {
-                         width: 90%;
+                         width: 100%;
                     }
 
                     h6 span {
@@ -857,20 +841,17 @@ body {
                               padding-bottom: 20px;
 
                               strong {
-                                   font-weight: normal;
+                                   @include h3Design();
                               }
                          }
 
                          li{  
                               padding: 5px 0;
                               a {
-                                   color: #8e989f;
-                                   font-size: 18px;
+                                   @include pDesign();
                               }
                          }
                     }
-
-                    
                }
           }
      }

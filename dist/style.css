@@ -12,8 +12,10 @@ body #vueSofbox {
 body #vueSofbox header {
   padding: 0 20.4%;
   background-color: white;
+  border-bottom: 1px solid #00000014;
   height: 70px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   position: fixed;
@@ -27,9 +29,10 @@ body #vueSofbox header a img {
 body #vueSofbox header div ul li {
   list-style: none;
   display: inline-block;
-  font-size: 17px;
   margin: 0 15px;
-  line-height: 34px;
+  font-size: 17px;
+  line-height: 30px;
+  color: #8e989f;
 }
 body #vueSofbox header div ul li a {
   color: #495057;
@@ -122,18 +125,20 @@ body #vueSofbox main section.jumbotron {
   background-color: #f2f7ff;
   height: 500px;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
 }
 body #vueSofbox main section.jumbotron div {
   flex-basis: 50%;
 }
-body #vueSofbox main section.jumbotron div span {
+body #vueSofbox main section.jumbotron div h1 {
   font-size: 60px;
   line-height: 86px;
+  font-weight: normal;
 }
 body #vueSofbox main section.jumbotron div p {
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 17px;
+  line-height: 30px;
   color: #8e989f;
   margin: 25px 0;
 }
@@ -154,13 +159,15 @@ body #vueSofbox main section.jumbotron:hover img {
 }
 body #vueSofbox main section.onlineMarketing {
   padding: 0 20.4%;
-  display: flex;
-  justify-content: space-around;
   margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 body #vueSofbox main section.onlineMarketing div.marketing-box {
   flex-basis: calc(100% / 3 - 20px);
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 body #vueSofbox main section.onlineMarketing div.marketing-box div.image-marketing {
@@ -175,13 +182,13 @@ body #vueSofbox main section.onlineMarketing div.marketing-box div.description-m
   padding-left: 20px;
 }
 body #vueSofbox main section.onlineMarketing div.marketing-box div.description-marketing h3 {
-  font-size: 25px;
+  font-size: 20px;
   line-height: 34px;
   font-weight: normal;
 }
 body #vueSofbox main section.onlineMarketing div.marketing-box div.description-marketing p {
   font-size: 17px;
-  line-height: 34px;
+  line-height: 30px;
   color: #8e989f;
   margin: 20px 0;
 }
@@ -202,6 +209,7 @@ body #vueSofbox main section.reporting-analysis {
 }
 body #vueSofbox main section.reporting-analysis div.analysis-box {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div:first-child h2 {
@@ -210,8 +218,9 @@ body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part d
   line-height: 55px;
 }
 body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div:first-child p {
-  color: #8e989f;
+  font-size: 17px;
   line-height: 30px;
+  color: #8e989f;
   padding: 20px 0 50px 0;
 }
 body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div.icon-and-description {
@@ -220,7 +229,8 @@ body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part d
   width: 100%;
   font-size: 20px;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
 }
 body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div.icon-and-description img {
   flex-basis: 10%;
@@ -232,11 +242,14 @@ body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part d
   flex-basis: 90%;
 }
 body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div.icon-and-description div h3 {
+  font-size: 20px;
+  line-height: 34px;
   font-weight: normal;
 }
 body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div.icon-and-description div p {
-  color: #8e989f;
+  font-size: 17px;
   line-height: 30px;
+  color: #8e989f;
   padding: 20px 0 25px 0;
 }
 body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div.icon-and-description:hover {
@@ -270,20 +283,22 @@ body #vueSofbox main section.popular-feature div.flex-popular {
 }
 body #vueSofbox main section.popular-feature div.flex-popular div.first-part {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 body #vueSofbox main section.popular-feature div.flex-popular div.first-part div:first-child {
   flex-basis: 80%;
 }
 body #vueSofbox main section.popular-feature div.flex-popular div.first-part div:first-child h2 {
-  font-size: 40px;
   font-weight: normal;
+  font-size: 37px;
+  line-height: 55px;
 }
 body #vueSofbox main section.popular-feature div.flex-popular div.first-part div:first-child p {
-  color: #8e989f;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 30px;
+  color: #8e989f;
   margin: 20px 0;
   width: 65%;
 }
@@ -304,6 +319,7 @@ body #vueSofbox main section.popular-feature div.flex-popular div.first-part div
 }
 body #vueSofbox main section.popular-feature div.flex-popular ul.second-part {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
@@ -318,6 +334,7 @@ body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li 
 }
 body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li h3 {
   font-size: 20px;
+  line-height: 34px;
   font-weight: normal;
 }
 body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li i {
@@ -338,7 +355,7 @@ body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:
 body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(6) i {
   color: #6cdac1;
 }
-body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:hover i {
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:hover i, body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:hover h3 {
   transition: 1s;
   color: white;
 }
@@ -361,32 +378,34 @@ body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:
 }
 body #vueSofbox main section.testimonials {
   background-image: url(img/15.png);
-  position: relative;
-  z-index: 10;
-  background-color: #d9e3f5;
   background-size: contain;
   background-repeat: no-repeat;
+  background-color: #d9e3f5;
   text-align: center;
+  position: relative;
+  z-index: 10;
 }
 body #vueSofbox main section.testimonials h2 {
   font-weight: normal;
   font-size: 37px;
+  line-height: 55px;
   padding-top: 75px;
 }
 body #vueSofbox main section.testimonials p {
-  color: #8e989f;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 30px;
+  color: #8e989f;
   padding: 20px 0 100px 0;
   width: 30%;
   margin: auto;
 }
 body #vueSofbox main section.testimonials div.testimonials-box {
+  padding: 0 20.4%;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
 body #vueSofbox main section.testimonials div.testimonials-box div {
-  margin-right: 20px;
   width: 500px;
   height: 345px;
   background-color: #fdfcfc;
@@ -425,12 +444,9 @@ body #vueSofbox main section.testimonials div.testimonials-box div > div > div.r
   width: 100%;
 }
 body #vueSofbox main section.testimonials i {
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 10px;
   color: blue;
-}
-body #vueSofbox main section.testimonials i:last-child {
-  margin-right: 20px;
 }
 body #vueSofbox main section.testimonials:before {
   content: "";
@@ -447,16 +463,19 @@ body #vueSofbox main section.latest-posts {
   text-align: center;
 }
 body #vueSofbox main section.latest-posts h2 {
-  font-size: 37px;
   font-weight: normal;
+  font-size: 37px;
+  line-height: 55px;
   margin-bottom: 30px;
 }
 body #vueSofbox main section.latest-posts p {
+  font-size: 17px;
+  line-height: 30px;
   color: #8e989f;
-  font-size: 20px;
 }
 body #vueSofbox main section.latest-posts div {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin-top: 50px;
 }
@@ -484,13 +503,15 @@ body #vueSofbox main section.latest-posts div div img {
   width: 100%;
 }
 body #vueSofbox main section.latest-posts div div h3 {
+  font-size: 20px;
+  line-height: 34px;
   font-weight: normal;
-  font-size: 22px;
   margin: 15px 0;
 }
 body #vueSofbox main section.latest-posts div div p {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 30px;
+  color: #8e989f;
 }
 body #vueSofbox main section.contact {
   padding: 0 20.4% 100px 20.4%;
@@ -500,14 +521,17 @@ body #vueSofbox main section.contact {
 body #vueSofbox main section.contact h2 {
   font-weight: normal;
   font-size: 37px;
+  line-height: 55px;
 }
 body #vueSofbox main section.contact p {
+  font-size: 17px;
+  line-height: 30px;
   color: #8e989f;
-  font-size: 20px;
   padding: 15px 0 30px 0;
 }
 body #vueSofbox main section.contact div {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 body #vueSofbox main section.contact div div {
@@ -530,6 +554,8 @@ body #vueSofbox main section.contact div div.map-side div.minimap-route {
   top: 0;
   left: 0;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 body #vueSofbox main section.contact div div.map-side div.minimap-route div:first-child {
   flex-basis: 90%;
@@ -538,6 +564,7 @@ body #vueSofbox main section.contact div div.map-side div.minimap-route div:firs
 body #vueSofbox main section.contact div div.map-side div.minimap-route div:first-child h5 {
   font-weight: normal;
   color: #8e989f;
+  font-size: 13px;
   margin-bottom: 30px;
 }
 body #vueSofbox main section.contact div div.map-side div.minimap-route div:first-child a {
@@ -582,6 +609,7 @@ body #vueSofbox main section.contact div div.map-side div.minimap-more-less {
   right: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   background-color: white;
 }
 body #vueSofbox main section.contact div div.map-side div.minimap-more-less i:first-child {
@@ -615,13 +643,15 @@ body #vueSofbox main section.contact div div.form-side img {
 }
 body #vueSofbox main section.contact div div.form-side h4 {
   font-size: 20px;
+  line-height: 34px;
   font-weight: normal;
   margin-bottom: 40px;
 }
 body #vueSofbox main section.contact div div.form-side h5, body #vueSofbox main section.contact div div.form-side h6 {
-  font-size: 18px;
-  font-weight: normal;
+  font-size: 17px;
+  line-height: 30px;
   color: #8e989f;
+  font-weight: normal;
 }
 body #vueSofbox main section.contact div div.form-side h6 {
   margin-bottom: 40px;
@@ -634,15 +664,17 @@ body #vueSofbox main section.contact div div.form-side span i {
 }
 body #vueSofbox main section.contact div div.form-side h3 {
   font-weight: normal;
-  font-size: 30px;
+  font-size: 23px;
 }
 body #vueSofbox main section.contact div div.form-side form {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: between;
 }
 body #vueSofbox main section.contact div div.form-side form input, body #vueSofbox main section.contact div div.form-side form textarea {
-  font-size: 15px;
+  font-size: 17px;
+  line-height: 30px;
+  color: #8e989f;
   padding: 10px;
   margin: 10px 0;
   border: 2px solid #eff1fe;
@@ -664,20 +696,21 @@ body #vueSofbox main section.contact div div.form-side form button:hover {
 body #vueSofbox footer {
   padding: 40px 20.4%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 body #vueSofbox footer div {
   flex-basis: calc(100% / 4 - 80px);
 }
 body #vueSofbox footer div p, body #vueSofbox footer div h6 {
-  color: #8e989f;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 30px;
+  color: #8e989f;
   margin-bottom: 50px;
   font-weight: normal;
 }
 body #vueSofbox footer div p {
-  width: 90%;
+  width: 100%;
 }
 body #vueSofbox footer div h6 span {
   color: #377dff;
@@ -690,12 +723,15 @@ body #vueSofbox footer div ul li:first-child {
   padding-bottom: 20px;
 }
 body #vueSofbox footer div ul li:first-child strong {
+  font-size: 20px;
+  line-height: 34px;
   font-weight: normal;
 }
 body #vueSofbox footer div ul li {
   padding: 5px 0;
 }
 body #vueSofbox footer div ul li a {
+  font-size: 17px;
+  line-height: 30px;
   color: #8e989f;
-  font-size: 18px;
 }
