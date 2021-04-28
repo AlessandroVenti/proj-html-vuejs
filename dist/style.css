@@ -642,3 +642,41 @@ body #vueSofbox main section.contact div div.form-side form button {
   font-size: 18px;
   margin: 10px 0;
 }
+body #vueSofbox footer {
+  padding: 40px 20.4%;
+  display: flex;
+  justify-content: space-between;
+}
+body #vueSofbox footer div {
+  flex-basis: calc(100% / 4 - 80px);
+}
+body #vueSofbox footer div p, body #vueSofbox footer div h6 {
+  color: #8e989f;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 50px;
+  font-weight: normal;
+}
+body #vueSofbox footer div p {
+  width: 90%;
+}
+body #vueSofbox footer div h6 span {
+  color: #377dff;
+}
+body #vueSofbox footer div ul {
+  list-style-type: none;
+  font-size: 22px;
+}
+body #vueSofbox footer div ul li:first-child {
+  padding-bottom: 20px;
+}
+body #vueSofbox footer div ul li:first-child strong {
+  font-weight: normal;
+}
+body #vueSofbox footer div ul li {
+  padding: 5px 0;
+}
+body #vueSofbox footer div ul li a {
+  color: #8e989f;
+  font-size: 18px;
+}

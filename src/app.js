@@ -12,7 +12,15 @@ function createVueInstance() {
                // COUNTER FOR SHOPPING CART IN NAVBAR
                shoppingCounter: 0,
                //Index for the condition of the blue-line
-               activeItemIndex : null
+               activeItemIndex : null,
+
+               footerLogo: '35.png',
+
+               footerList1 : ['About us','Theme','Features','Pricing','Blog'],
+
+               footerList2 : ['About Sofbox','Roadmap','How it Work','Team','News'],
+
+               footerList3 : ['About Us','Theme','Features','Pricing','Blog']
           },
 
           methods: {

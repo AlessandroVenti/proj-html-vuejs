@@ -404,12 +404,58 @@
                                    <button type="submit">Send Message</button>
                               </form>
                          </div>
-                         
+
                     </div>
                </section>
-               
-               
           </main>
+
+          <footer>
+
+               <div>
+               <img :src="'img/' + footerLogo" alt="">
+               <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+               <h6>Copyright @ 2018 <span>Sofbox</span></h6>
+               </div>
+
+               <div>
+                    <ul>
+                         <li>
+                              <strong>Menu</strong>
+                         </li>
+
+                         <li v-for="element in footerList1">
+                              <a href=""> {{element}} </a>
+                         </li>
+                    </ul>
+               </div>
+
+               <div>
+                    <ul>
+                         <li>
+                              <strong>About us</strong>
+                         </li>
+
+                         <li v-for="element in footerList2">
+                              <a href=""> {{element}} </a>
+                         </li>
+                    </ul>
+               </div>
+
+               <div>
+                    <ul>
+                         <li>
+                              <strong>Quick Links</strong>
+                         </li>
+
+                         <li v-for="element in footerList3">
+                              <a href=""> {{element}} </a>
+                         </li>
+                    </ul>
+               </div>
+
+               
+
+          </footer>
 
      </div>
      

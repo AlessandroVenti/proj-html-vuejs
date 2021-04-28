@@ -801,5 +801,54 @@ body {
                     }                    
                }
           }
+
+          footer {
+               padding: 40px 20.4%;
+               display: flex;
+               justify-content: space-between;
+
+               div {
+                    flex-basis: calc(100% / 4 - 80px);
+
+                    p,h6 {
+                         color: #8e989f;
+                         font-size: 18px;
+                         line-height: 30px;
+                         margin-bottom: 50px;
+                         font-weight: normal;
+                    }
+
+                    p {
+                         width: 90%;
+                    }
+
+                    h6 span {
+                         color: #377dff;
+                    }
+
+                    ul {
+                         list-style-type: none;
+                         font-size: 22px;
+
+                         li:first-child {
+                              padding-bottom: 20px;
+
+                              strong {
+                                   font-weight: normal;
+                              }
+                         }
+
+                         li{  
+                              padding: 5px 0;
+                              a {
+                                   color: #8e989f;
+                                   font-size: 18px;
+                              }
+                         }
+                    }
+
+                    
+               }
+          }
      }
 }
