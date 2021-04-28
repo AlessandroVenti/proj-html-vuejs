@@ -1,44 +1,5 @@
-$padding : 0 20.4%;
-$jumbotronPadding : 0 11%;
-
-@mixin buttonDesign {
-     background-color: #377dff;
-     border: 1px solid #377dff;
-     color: #ffffff;
-     padding: 13px 22px;
-     border-radius: 5px;
-}
-
-@mixin h1Design {
-     font-size: 60px;
-     line-height: 86px;
-     font-weight: normal;
-}
-
-@mixin h2Design {
-     font-weight: normal;
-     font-size: 37px;
-     line-height: 55px;  
-}
-
-@mixin h3Design {
-     font-size: 20px;
-     line-height: 34px;
-     font-weight: normal;
-}
-
-@mixin pDesign {
-     font-size: 17px;
-     line-height: 30px;
-     color: #8e989f;
-}
-
-@mixin rowBetween {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
-}
-
+@import 'partials/_variables';
+@import 'partials/_mixin';
 
 * {
      margin: 0;
@@ -55,7 +16,7 @@ body {
 
                                                   //NAVBAR
           header {
-               padding: $padding;
+               padding: 0 20.4%;
                background-color: white;
                border-bottom: 1px solid #00000014;
                height: 70px;
@@ -174,8 +135,7 @@ body {
                          }
 
                          button:hover {
-                              transition: 1s linear;
-                              background-color: #1e1e1e;
+                              @include buttonHoverDesign();
                          }
                     }
                }
@@ -210,6 +170,10 @@ body {
                               font-size: 18px;
                          }
 
+                         button:hover {
+                              @include buttonHoverDesign();
+                         }
+
                          img {
                               height: 500px;
                          }
@@ -223,9 +187,8 @@ body {
                }
 
                section.onlineMarketing {
-                    padding: $padding;
-                    margin-top: 150px;
                     @include rowBetween();
+                    padding: $paddingDesign;
 
                     div.marketing-box {
                          flex-basis: calc(100% / 3 - 20px);
@@ -273,7 +236,7 @@ body {
                }
 
                section.reporting-analysis {
-                    padding:  10% 20.4% 0.5% 20.4%;
+                    padding:  $paddingDesign;
 
                     div.analysis-box {
                          @include rowBetween();
@@ -356,7 +319,7 @@ body {
                     }
 
                     div.flex-popular {
-                         padding: 9% 20.4%;
+                         padding: $paddingDesign;
 
                          div.first-part {
                               @include rowBetween();
@@ -385,8 +348,7 @@ body {
                                    }
 
                                    button:hover {
-                                        transition: 1s linear;
-                                        background-color: #1e1e1e;
+                                        @include buttonHoverDesign();
                                    }
                               }
                          }
@@ -475,21 +437,20 @@ body {
                     text-align: center;
                     position: relative;
                     z-index: 10;
+                    padding: $paddingDesign;
 
                     h2 {
                          @include h2Design();
-                         padding-top: 75px;
                     }
 
                     p {
                          @include pDesign(); 
-                         padding: 20px 0 100px 0;
-                         width: 30%;
+                         padding: 15px 0 100px 0;
+                         width: 45%;
                          margin: auto;
                     }
 
                     div.testimonials-box {
-                         padding: $padding;
                          @include rowBetween();
 
                          div {
@@ -510,8 +471,7 @@ body {
                               height: 325px;
                               border-bottom: 1px solid black;
                               padding: 35px 0;
-                              display: flex;
-                              flex-direction: column;
+                              @include columnBetween();
                               align-items: center;
 
                               img {
@@ -557,7 +517,7 @@ body {
                }
                
                section.latest-posts {
-                    padding: 100px 20.4%;
+                    padding: $paddingDesign;
                     text-align: center;
 
                     h2 {
@@ -567,24 +527,23 @@ body {
 
                     p {
                          @include pDesign();
+                         margin-bottom: $marginDesign;
                     }
 
                     div {
                          @include rowBetween();
-                         margin-top: 50px;
 
                          div {
                               flex-basis: calc(100% / 3 - 20px);
                               border: 1px solid #00000014;
-                              display: flex;
-                              flex-direction: column;
+                              @include columnBetween();
                               padding: 10px;
                               text-align: left;
                               position: relative;
 
                               div.absolute-date {
                                    position: absolute;
-                                   top: -30px;
+                                   top: 20px;
                                    left: 20px;
                                    padding: 7px;
                                    border-radius: 5px;
@@ -612,7 +571,7 @@ body {
                }
 
                section.contact {
-                    padding: 0 20.4% 100px 20.4%;
+                    padding: $paddingDesign;
                     text-align: center;
                     border-bottom: 1px solid #00000014;
 
@@ -622,7 +581,8 @@ body {
 
                     p {
                          @include pDesign();
-                         padding: 15px 0 30px 0;
+                         padding-top: 15px;
+                         margin-bottom: $marginDesign;
                     }
 
                     div {
@@ -681,9 +641,7 @@ body {
                                    }
 
                                    div {
-                                        display: flex;
-                                        flex-direction: column;
-                                        justify-content: space-between;
+                                        @include columnBetween();
                                    }
                               }
 
@@ -712,9 +670,7 @@ body {
                                    position: absolute;
                                    bottom: 20px;
                                    right: 10px;
-                                   display: flex;
-                                   flex-direction: column;
-                                   justify-content: space-between;
+                                   @include columnBetween();
                                    background-color: white;
 
                                    i:first-child {
@@ -742,9 +698,7 @@ body {
                          }
 
                          div.form-side {
-                              display: flex;
-                              flex-direction: column;
-                              justify-content: flex-start;
+                              @include columnBetween();
                               text-align: left;
                               
 
@@ -784,9 +738,7 @@ body {
                               }
 
                               form {
-                                   display: flex;
-                                   flex-direction: column;
-                                   justify-content: between;
+                                   @include columnBetween();
 
                                    input, textarea {
                                         @include pDesign();
@@ -803,8 +755,7 @@ body {
                                    }
 
                                    button:hover {
-                                        transition: 1s linear;
-                                        background-color: #1e1e1e;
+                                        @include buttonHoverDesign();
                                    }
                               }
                          }

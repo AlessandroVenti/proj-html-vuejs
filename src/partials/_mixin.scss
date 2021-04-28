@@ -1,0 +1,48 @@
+@mixin buttonDesign {
+     background-color: #377dff;
+     border: 1px solid #377dff;
+     color: #ffffff;
+     padding: 13px 22px;
+     border-radius: 5px;
+}
+
+@mixin buttonHoverDesign {
+     transition: 1s linear;
+     background-color: #1e1e1e;
+}
+
+@mixin h1Design {
+     font-size: 60px;
+     line-height: 86px;
+     font-weight: normal;
+}
+
+@mixin h2Design {
+     font-weight: normal;
+     font-size: 37px;
+     line-height: 55px;  
+}
+
+@mixin h3Design {
+     font-size: 20px;
+     line-height: 34px;
+     font-weight: normal;
+}
+
+@mixin pDesign {
+     font-size: 17px;
+     line-height: 30px;
+     color: #8e989f;
+}
+
+@mixin rowBetween {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+}
+
+@mixin columnBetween {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+}

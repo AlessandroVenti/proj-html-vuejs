@@ -150,6 +150,10 @@ body #vueSofbox main section.jumbotron div button {
   border-radius: 5px;
   font-size: 18px;
 }
+body #vueSofbox main section.jumbotron div button:hover {
+  transition: 1s linear;
+  background-color: #1e1e1e;
+}
 body #vueSofbox main section.jumbotron div img {
   height: 500px;
 }
@@ -158,11 +162,10 @@ body #vueSofbox main section.jumbotron:hover img {
   height: 300px;
 }
 body #vueSofbox main section.onlineMarketing {
-  padding: 0 20.4%;
-  margin-top: 150px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 120px 20.4% 0 20.4%;
 }
 body #vueSofbox main section.onlineMarketing div.marketing-box {
   flex-basis: calc(100% / 3 - 20px);
@@ -205,7 +208,7 @@ body #vueSofbox main section.onlineMarketing div.marketing-box div.description-m
   margin: 0 10px;
 }
 body #vueSofbox main section.reporting-analysis {
-  padding: 10% 20.4% 0.5% 20.4%;
+  padding: 120px 20.4% 0 20.4%;
 }
 body #vueSofbox main section.reporting-analysis div.analysis-box {
   display: flex;
@@ -279,7 +282,7 @@ body #vueSofbox main section.popular-feature img:hover {
   top: -100px;
 }
 body #vueSofbox main section.popular-feature div.flex-popular {
-  padding: 9% 20.4%;
+  padding: 120px 20.4% 0 20.4%;
 }
 body #vueSofbox main section.popular-feature div.flex-popular div.first-part {
   display: flex;
@@ -384,23 +387,22 @@ body #vueSofbox main section.testimonials {
   text-align: center;
   position: relative;
   z-index: 10;
+  padding: 120px 20.4% 0 20.4%;
 }
 body #vueSofbox main section.testimonials h2 {
   font-weight: normal;
   font-size: 37px;
   line-height: 55px;
-  padding-top: 75px;
 }
 body #vueSofbox main section.testimonials p {
   font-size: 17px;
   line-height: 30px;
   color: #8e989f;
-  padding: 20px 0 100px 0;
-  width: 30%;
+  padding: 15px 0 100px 0;
+  width: 45%;
   margin: auto;
 }
 body #vueSofbox main section.testimonials div.testimonials-box {
-  padding: 0 20.4%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -423,6 +425,7 @@ body #vueSofbox main section.testimonials div.testimonials-box div > div > div.r
   padding: 35px 0;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 body #vueSofbox main section.testimonials div.testimonials-box div > div > div.real-box img {
@@ -459,7 +462,7 @@ body #vueSofbox main section.testimonials:before {
   z-index: -1;
 }
 body #vueSofbox main section.latest-posts {
-  padding: 100px 20.4%;
+  padding: 120px 20.4% 0 20.4%;
   text-align: center;
 }
 body #vueSofbox main section.latest-posts h2 {
@@ -472,25 +475,26 @@ body #vueSofbox main section.latest-posts p {
   font-size: 17px;
   line-height: 30px;
   color: #8e989f;
+  margin-bottom: 100px;
 }
 body #vueSofbox main section.latest-posts div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 50px;
 }
 body #vueSofbox main section.latest-posts div div {
   flex-basis: calc(100% / 3 - 20px);
   border: 1px solid #00000014;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 10px;
   text-align: left;
   position: relative;
 }
 body #vueSofbox main section.latest-posts div div div.absolute-date {
   position: absolute;
-  top: -30px;
+  top: 20px;
   left: 20px;
   padding: 7px;
   border-radius: 5px;
@@ -514,7 +518,7 @@ body #vueSofbox main section.latest-posts div div p {
   color: #8e989f;
 }
 body #vueSofbox main section.contact {
-  padding: 0 20.4% 100px 20.4%;
+  padding: 120px 20.4% 0 20.4%;
   text-align: center;
   border-bottom: 1px solid #00000014;
 }
@@ -527,7 +531,8 @@ body #vueSofbox main section.contact p {
   font-size: 17px;
   line-height: 30px;
   color: #8e989f;
-  padding: 15px 0 30px 0;
+  padding-top: 15px;
+  margin-bottom: 100px;
 }
 body #vueSofbox main section.contact div {
   display: flex;
@@ -633,7 +638,7 @@ body #vueSofbox main section.contact div div.map-side div.minimap-credits span {
 body #vueSofbox main section.contact div div.form-side {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   text-align: left;
 }
 body #vueSofbox main section.contact div div.form-side img {
@@ -669,7 +674,7 @@ body #vueSofbox main section.contact div div.form-side h3 {
 body #vueSofbox main section.contact div div.form-side form {
   display: flex;
   flex-direction: column;
-  justify-content: between;
+  justify-content: space-between;
 }
 body #vueSofbox main section.contact div div.form-side form input, body #vueSofbox main section.contact div div.form-side form textarea {
   font-size: 17px;
