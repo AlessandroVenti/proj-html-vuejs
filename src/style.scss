@@ -602,6 +602,204 @@ body {
                          }
                     }
                }
+
+               section.contact {
+                    padding: 0 20.4% 100px 20.4%;
+                    text-align: center;
+                    border-bottom: 1px solid #00000014;
+
+                    h2 {
+                         font-weight: normal;
+                         font-size: 37px;
+                    }
+
+                    p {
+                         color: #8e989f;
+                         font-size: 20px;
+                         padding: 15px 0 30px 0;
+                    }
+
+                    div {
+                         display: flex;
+                         justify-content: space-between;
+
+                         div {
+                              flex-basis: calc(50% - 20px);
+                         }
+
+                         div.map-side {
+                              position: relative;
+                              max-height: 420px;
+                         
+                              img {
+                                   width: 100%;
+                              }
+
+                              div.minimap-route {
+                                   border: 1px solid #00000014;
+                                   margin: 5px;
+                                   padding: 10px;
+                                   text-align: left;
+                                   background-color: white;
+                                   position: absolute;
+                                   top: 0;
+                                   left: 0;
+                                   display: flex;
+
+                                   div:first-child {
+                                        flex-basis: 90%;
+                                        margin-right: 30px;
+
+                                        h5 {
+                                             font-weight: normal;
+                                             color: #8e989f;
+                                             margin-bottom: 30px;
+                                        }
+
+                                        a {
+                                             font-size: 13px;
+                                             color: #377dff;
+                                        }
+                                   }
+
+                                   div:last-child {
+                                        flex-basis: 10%;
+
+                                        div {
+                                             text-align: center;
+                                        }
+
+                                        i, h5 {
+                                             color: #377dff;
+                                        }
+                                   }
+
+                                   div {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: space-between;
+                                   }
+                              }
+
+                              div.minimap-pin {
+                                   position: absolute;
+                                   bottom: 50%;
+                                   left: 50%;
+
+                                   i {
+                                        font-size: 30px;
+                                        color: #ff796d;
+                                   }
+                              }
+
+                              div.minimap-icon {
+                                   position: absolute;
+                                   bottom: 25px;
+                                   left: 20px;
+                                   color: #6cda6c;
+                                   background-color: black;
+                                   padding: 10px;
+                                   font-size: 20px;
+                              }
+
+                              div.minimap-more-less {
+                                   position: absolute;
+                                   bottom: 20px;
+                                   right: 10px;
+                                   display: flex;
+                                   flex-direction: column;
+                                   background-color: white;
+
+                                   i:first-child {
+                                        border-bottom: 1px solid #00000014;
+                                   }
+
+                                   i {
+                                        padding: 10px;
+                                        font-size: 20px;
+                                   }
+                              }
+
+                              div.minimap-credits {
+                                   position: absolute;
+                                   bottom: 0;
+                                   right: 0;
+                                   background-color: rgba(255, 255, 255, 0.5);
+
+                                   span {
+                                        border-right: 1px solid #8e989f;
+                                        padding: 0 10px;
+                                        font-size: 10px;
+                                   }
+                              }
+                         }
+
+                         div.form-side {
+                              display: flex;
+                              flex-direction: column;
+                              justify-content: flex-start;
+                              text-align: left;
+                              
+
+                              img {
+                                   width: 130px;
+                                   height: auto;
+                                   margin-bottom: 40px;
+                              }
+
+                              h4 {
+                                   font-size: 20px;
+                                   font-weight: normal;
+                                   margin-bottom: 40px;
+                              }
+
+                              h5, h6 {
+                                   font-size: 18px;
+                                   font-weight: normal;
+                                   color: #8e989f;
+                              }
+
+                              h6 {
+                                   margin-bottom: 40px;
+                              }
+
+                              span {
+
+                                   i{
+                                        color: #377dff;
+                                        border: 1px solid #00000014;
+                                        padding: 10px 14px;
+                                        margin: 0 2px 30px 0;
+                                   }
+                              }
+
+                              h3 {
+                                   font-weight: normal;
+                                   font-size: 30px;
+                              }
+
+                              form {
+                                   display: flex;
+                                   flex-direction: column;
+                                   justify-content: flex-start;
+
+                                   input, textarea {
+                                        font-size: 15px;
+                                        padding: 10px;
+                                        margin: 10px 0;
+                                        border: 2px solid #eff1fe;
+                                   }
+
+                                   button {
+                                        @include buttonDesign();
+                                        width: 40%;
+                                        font-size: 18px;
+                                        margin: 10px 0
+                                   }
+                              }
+                         }
+                    }                    
+               }
           }
      }
 }

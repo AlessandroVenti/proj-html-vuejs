@@ -477,3 +477,168 @@ body #vueSofbox main section.latest-posts div div p {
   font-size: 18px;
   line-height: 30px;
 }
+body #vueSofbox main section.contact {
+  padding: 0 20.4% 100px 20.4%;
+  text-align: center;
+  border-bottom: 1px solid #00000014;
+}
+body #vueSofbox main section.contact h2 {
+  font-weight: normal;
+  font-size: 37px;
+}
+body #vueSofbox main section.contact p {
+  color: #8e989f;
+  font-size: 20px;
+  padding: 15px 0 30px 0;
+}
+body #vueSofbox main section.contact div {
+  display: flex;
+  justify-content: space-between;
+}
+body #vueSofbox main section.contact div div {
+  flex-basis: calc(50% - 20px);
+}
+body #vueSofbox main section.contact div div.map-side {
+  position: relative;
+  max-height: 420px;
+}
+body #vueSofbox main section.contact div div.map-side img {
+  width: 100%;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-route {
+  border: 1px solid #00000014;
+  margin: 5px;
+  padding: 10px;
+  text-align: left;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-route div:first-child {
+  flex-basis: 90%;
+  margin-right: 30px;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-route div:first-child h5 {
+  font-weight: normal;
+  color: #8e989f;
+  margin-bottom: 30px;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-route div:first-child a {
+  font-size: 13px;
+  color: #377dff;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-route div:last-child {
+  flex-basis: 10%;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-route div:last-child div {
+  text-align: center;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-route div:last-child i, body #vueSofbox main section.contact div div.map-side div.minimap-route div:last-child h5 {
+  color: #377dff;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-route div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-pin {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-pin i {
+  font-size: 30px;
+  color: #ff796d;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-icon {
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+  color: #6cda6c;
+  background-color: black;
+  padding: 10px;
+  font-size: 20px;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-more-less {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-more-less i:first-child {
+  border-bottom: 1px solid #00000014;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-more-less i {
+  padding: 10px;
+  font-size: 20px;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-credits {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-credits span {
+  border-right: 1px solid #8e989f;
+  padding: 0 10px;
+  font-size: 10px;
+}
+body #vueSofbox main section.contact div div.form-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+body #vueSofbox main section.contact div div.form-side img {
+  width: 130px;
+  height: auto;
+  margin-bottom: 40px;
+}
+body #vueSofbox main section.contact div div.form-side h4 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+body #vueSofbox main section.contact div div.form-side h5, body #vueSofbox main section.contact div div.form-side h6 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #8e989f;
+}
+body #vueSofbox main section.contact div div.form-side h6 {
+  margin-bottom: 40px;
+}
+body #vueSofbox main section.contact div div.form-side span i {
+  color: #377dff;
+  border: 1px solid #00000014;
+  padding: 10px 14px;
+  margin: 0 2px 30px 0;
+}
+body #vueSofbox main section.contact div div.form-side h3 {
+  font-weight: normal;
+  font-size: 30px;
+}
+body #vueSofbox main section.contact div div.form-side form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+body #vueSofbox main section.contact div div.form-side form input, body #vueSofbox main section.contact div div.form-side form textarea {
+  font-size: 15px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #eff1fe;
+}
+body #vueSofbox main section.contact div div.form-side form button {
+  background-color: #377dff;
+  border: 1px solid #377dff;
+  color: #ffffff;
+  padding: 13px 22px;
+  border-radius: 5px;
+  width: 40%;
+  font-size: 18px;
+  margin: 10px 0;
+}
