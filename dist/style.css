@@ -346,7 +346,7 @@ body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:
 body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(4):hover,
 body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(7):hover {
   transition: 1s;
-  background-color: #377dff;
+  background-color: #387cfb;
 }
 body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(3):hover,
 body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(6):hover {
@@ -363,7 +363,7 @@ body #vueSofbox main section.testimonials {
   background-image: url(img/15.png);
   position: relative;
   z-index: 10;
-  background-color: #367dff;
+  background-color: #d9e3f5;
   background-size: contain;
   background-repeat: no-repeat;
   text-align: center;
@@ -435,16 +435,12 @@ body #vueSofbox main section.testimonials i:last-child {
 body #vueSofbox main section.testimonials:before {
   content: "";
   width: 100%;
-  height: 400px;
+  height: 300px;
   position: absolute;
   bottom: 0;
   left: 0;
-  background: -webkit-linear-gradient(top, rgba(50, 119, 247, 0.08) 0, #ffffff 60%);
+  background: -webkit-linear-gradient(top, rgba(217, 227, 245, 0) 0, #ffffff 60%);
   z-index: -1;
-}
-body #vueSofbox main section.testimonials:hover {
-  transition: 2s;
-  background-color: #71a1fa;
 }
 body #vueSofbox main section.latest-posts {
   padding: 100px 20.4%;
