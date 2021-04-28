@@ -18,6 +18,7 @@ body #vueSofbox header {
   align-items: center;
   position: fixed;
   width: 100%;
+  z-index: 100;
 }
 body #vueSofbox header a img {
   height: 50px;
@@ -353,4 +354,76 @@ body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:
 body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(8):hover {
   transition: 1s;
   background-color: #ff796d;
+}
+body #vueSofbox main section.testimonials {
+  background-image: url(img/15.png);
+  z-index: -1;
+  background-color: #bbd5fb;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+body #vueSofbox main section.testimonials h2 {
+  font-weight: normal;
+  font-size: 37px;
+  padding-top: 75px;
+}
+body #vueSofbox main section.testimonials p {
+  color: #8e989f;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 20px 0 100px 0;
+  width: 30%;
+  margin: auto;
+}
+body #vueSofbox main section.testimonials div.testimonials-box {
+  display: flex;
+  justify-content: center;
+}
+body #vueSofbox main section.testimonials div.testimonials-box div {
+  margin-right: 20px;
+  width: 500px;
+  height: 345px;
+  background-color: #fdfcfc;
+  border-bottom: 1px solid black;
+}
+body #vueSofbox main section.testimonials div.testimonials-box div > div {
+  width: 500px;
+  height: 335px;
+  border-bottom: 1px solid black;
+}
+body #vueSofbox main section.testimonials div.testimonials-box div > div > div.real-box {
+  width: 500px;
+  height: 325px;
+  border-bottom: 1px solid black;
+  padding: 35px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body #vueSofbox main section.testimonials div.testimonials-box div > div > div.real-box img {
+  border-radius: 50%;
+  height: 60px;
+  width: auto;
+  margin-bottom: 10px;
+}
+body #vueSofbox main section.testimonials div.testimonials-box div > div > div.real-box div.testimonials-description-box {
+  background-color: transparent;
+  margin: 0;
+  border: 0;
+  font-size: 20px;
+}
+body #vueSofbox main section.testimonials div.testimonials-box div > div > div.real-box div.testimonials-description-box span.grey {
+  color: #8e989f;
+}
+body #vueSofbox main section.testimonials div.testimonials-box div > div > div.real-box div.testimonials-description-box p {
+  width: 100%;
+}
+body #vueSofbox main section.testimonials i {
+  margin-top: 10px;
+  font-size: 10px;
+  color: blue;
+}
+body #vueSofbox main section.testimonials i:last-child {
+  margin-right: 20px;
 }

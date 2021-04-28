@@ -32,6 +32,7 @@ body {
                align-items: center;
                position: fixed;
                width: 100%;
+               z-index: 100;
 
                a {
 
@@ -453,6 +454,95 @@ body {
                          }
                     }
                }
+
+               section.testimonials {
+                    background-image: url(img/15.png);
+                    // background: -webkit-linear-gradient(top, rgba(50, 119, 247, 0.08) 0, #ffffff 60%);
+                    z-index: -1;
+                    background-color:#bbd5fb;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    text-align: center;
+
+                    h2 {
+                         font-weight: normal;
+                         font-size: 37px;
+                         padding-top: 75px;
+                    }
+
+                    p {
+                         color: #8e989f;
+                         font-size: 20px;
+                         line-height: 30px;   
+                         padding: 20px 0 100px 0;
+                         width: 30%;
+                         margin: auto;
+                    }
+
+                    div.testimonials-box {
+                         display: flex;
+                         justify-content: center;
+
+                         div {
+                              margin-right: 20px;
+                              width: 500px;
+                              height: 345px;
+                              background-color: rgb(253, 252, 252);
+                              border-bottom: 1px solid black;
+                         }
+
+                         div > div {
+                              width: 500px;
+                              height: 335px;
+                              border-bottom: 1px solid black;
+                         }
+
+                         div > div > div.real-box {
+                              width: 500px;
+                              height: 325px;
+                              border-bottom: 1px solid black;
+                              padding: 35px 0;
+                              display: flex;
+                              flex-direction: column;
+                              align-items: center;
+
+                              img {
+                                   border-radius: 50%;
+                                   height: 60px;
+                                   width: auto;
+                                   margin-bottom: 10px;
+                              }
+
+                              div.testimonials-description-box {
+                                   background-color: transparent;
+                                   margin: 0;
+                                   border: 0;
+                                   font-size: 20px;
+
+                                   span.grey {
+                                        color: #8e989f;
+                                   }
+
+                                   p {
+                                        width: 100%;
+                                   }
+
+                                   
+                              }
+                         }
+                    }
+
+                    i {
+                         margin-top: 10px;
+                         font-size: 10px;
+                         color: blue;
+                    }
+
+                    i:last-child {
+                         margin-right: 20px;
+                    }
+               }
+               
           }
      }
 }
