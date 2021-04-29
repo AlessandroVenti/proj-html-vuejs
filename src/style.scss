@@ -5,8 +5,9 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
-     font-family: 'PT Sans', sans-serif;
+     font-family: 'Comfortaa', cursive;
      text-decoration: none;
+     list-style-type: none;
 }
 
 body {
@@ -41,16 +42,16 @@ body {
                          //  ITEMS LISTED IN NAVBAR
 
                          li {
-                              list-style: none;
                               display: inline-block;
                               margin: 0 15px;
                               @include pDesign();
                               
                               a {
                                    color: #495057;
+                                   font-family: 'Indie Flower', cursive;
 
                                    div.blueLine {
-                                        border-bottom: 3px solid #377dff;
+                                        border-bottom: 2px solid #377dff;
                                         width: 100%;
                                    }
                               }
@@ -63,14 +64,13 @@ body {
                          }
 
                          .listNav:hover div {
-
-                              border-bottom: 3px solid #377dff;
-                              transition: 0.7s linear;
+                              transition: 0.5s linear;
+                              border-bottom: 2px solid #377dff;
                               width: 100%;
                          }
 
                          .listNav:hover a {
-                              transition: 0.5s linear;
+                              transition: 0.5s smooth;
                               color: #377dff;
                          }
 
@@ -132,6 +132,7 @@ body {
                               @include buttonDesign();
                               margin-left: 40px;
                               font-size: 15px;
+                              
                          }
 
                          button:hover {
@@ -217,7 +218,6 @@ body {
                               }
 
                               ul {
-                                   list-style-type: none;
 
                                    li {
                                         padding: 13px;
@@ -228,6 +228,8 @@ body {
 
                                         span {
                                              margin:0 10px;
+                                             font-family: 'Indie Flower', cursive;
+                                             font-size: 20px;
                                         }
                                    }
                               }
@@ -344,7 +346,7 @@ body {
      
                                    button {
                                         @include buttonDesign();
-                                        font-size: 20px;
+                                        font-size: 15px;
                                    }
 
                                    button:hover {
@@ -356,7 +358,6 @@ body {
                          ul.second-part {
                               @include rowBetween();
                               flex-wrap: wrap;
-                              list-style: none;
 
                               li {
                                    display: inline-block;
@@ -493,6 +494,8 @@ body {
 
                                    p {
                                         width: 100%;
+                                        font-family: 'Indie Flower', cursive;
+                                        line-height: 50px;
                                    }
                               }
                          }
@@ -549,8 +552,13 @@ body {
                                    border-radius: 5px;
                                    background-color: white;
 
-                                   span {
+                                   a {
                                         color: #8e989f; 
+                                   }
+
+                                   a:hover {
+                                        transition: 1.5s;
+                                        color: #377dff;
                                    }
                               }
 
@@ -563,8 +571,14 @@ body {
                                    margin: 15px 0;
                               }
 
+                              h3:hover {
+                                   transition: 0.5s linear;
+                                   color: #377dff;
+                              }
+
                               p {
                                    @include pDesign();
+                                   margin: 0;
                               }
                          }
                     }
@@ -572,6 +586,7 @@ body {
 
                section.contact {
                     padding: $paddingDesign;
+                    padding-bottom: 100px;
                     text-align: center;
                     border-bottom: 1px solid #00000014;
 
@@ -615,6 +630,11 @@ body {
                                         flex-basis: 90%;
                                         margin-right: 30px;
 
+                                        h4 {
+                                             font-size: 14px;
+                                             margin-bottom: 10px;
+                                        }
+
                                         h5 {
                                              font-weight: normal;
                                              color: #8e989f;
@@ -637,6 +657,10 @@ body {
 
                                         i, h5 {
                                              color: #377dff;
+                                        }
+
+                                        i {
+                                             margin-bottom: 5px; 
                                         }
                                    }
 
@@ -711,6 +735,7 @@ body {
                               h4 {
                                    @include h3Design();
                                    margin-bottom: 40px;
+                                   font-family: 'Indie Flower', cursive;
                               }
 
                               h5, h6 {
@@ -730,6 +755,12 @@ body {
                                         padding: 10px 14px;
                                         margin: 0 2px 30px 0;
                                    }
+
+                                   i:hover {
+                                        transition: 1s linear;
+                                        color: white;
+                                        background-color: #387cfb;
+                                   }
                               }
 
                               h3 {
@@ -746,11 +777,16 @@ body {
                                         margin: 10px 0;
                                         border: 2px solid #eff1fe;
                                    }
+                                   input:hover,
+                                   textarea:hover {
+                                        transition: 0.5s linear;
+                                        border: 2px solid #387cfb;
+                                   }
 
                                    button {
                                         @include buttonDesign();
-                                        width: 40%;
-                                        font-size: 18px;
+                                        width: 30%;
+                                        font-size: 15px;
                                         margin: 10px 0
                                    }
 
@@ -784,8 +820,12 @@ body {
                          color: #377dff;
                     }
 
+                    h6 span:hover {
+                         transition: 0.5s linear;
+                         color: black;
+                    }
+
                     ul {
-                         list-style-type: none;
                          font-size: 22px;
 
                          li:first-child {
@@ -800,6 +840,10 @@ body {
                               padding: 5px 0;
                               a {
                                    @include pDesign();
+                              }
+                              a:hover {
+                                   transition: 0.5s linear;
+                                   color: #387cfb;
                               }
                          }
                     }
