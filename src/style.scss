@@ -175,9 +175,32 @@ body {
                               @include buttonHoverDesign();
                          }
 
-                         img {
-                              height: 500px;
+                         @keyframes jumbo {
+                              0% {
+                                   height: 500px;
+                              }
+
+                              25% {
+                                   height: 480px;
+                              }
+
+                              50% {
+                                   height: 460px;
+                              }
+
+                              75% {
+                                   height: 480px;
+                              }
+
+                              100% {
+                                   height: 500px;
+                              }
                          }
+
+                         img {
+                              animation: jumbo 5s linear infinite;
+                         }
+
 
                     }
                }
@@ -316,17 +339,43 @@ body {
                section.popular-feature {
                     position:relative;
 
+                    @keyframes bubble {
+                         0% {
+                              top: 0;
+                              left: -350px;
+                         }
+
+                         25% {
+                              top: -50px;
+                              left: -350px;
+                         }
+
+                         50% {
+                              top: -100px;
+                              left: -350px;
+                         }
+
+                         60% {
+                              top: -75px;
+                              left: -350px;
+                         }
+
+                         75% {
+                              top: -50px;
+                              left: -350px;
+                         }
+
+                         100% {
+                              top: 0;
+                              left: -350px;
+                         }
+                       }
+
                     img {
                          position: absolute;
                          left: -350px;
                          top: 0;
-                    }
-
-                    img:hover {
-                         position: absolute;
-                         transition: 2s;
-                         left: -350px;
-                         top: -100px;
+                         animation: bubble 5s linear infinite;
                     }
 
                     div.flex-popular {
