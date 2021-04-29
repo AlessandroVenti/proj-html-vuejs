@@ -619,6 +619,11 @@ body #vueSofbox main section.latest-posts div div p {
   color: #8e989f;
   margin: 0;
 }
+body #vueSofbox main section.latest-posts div div:hover {
+  transition: 1s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid #0000000d;
+}
 body #vueSofbox main section.contact {
   padding: 120px 20.4% 0 20.4%;
   padding-bottom: 100px;
