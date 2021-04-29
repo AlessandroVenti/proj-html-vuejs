@@ -249,11 +249,18 @@ body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part d
   line-height: 34px;
   font-weight: normal;
 }
+body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div.icon-and-description div h3.reportingTextInEvidence {
+  color: #377dff;
+}
 body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div.icon-and-description div p {
   font-size: 17px;
   line-height: 30px;
   color: #8e989f;
   padding: 20px 0 25px 0;
+}
+body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div.icon-and-description.reportingInEvidence {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid #0000000d;
 }
 body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div.icon-and-description:hover {
   transition: 1s;
@@ -450,7 +457,9 @@ body #vueSofbox main section.testimonials div.testimonials-box div > div > div.r
 body #vueSofbox main section.testimonials i {
   margin-top: 20px;
   font-size: 10px;
-  color: blue;
+}
+body #vueSofbox main section.testimonials i.activeDot {
+  color: #377dff;
 }
 body #vueSofbox main section.testimonials:before {
   content: "";

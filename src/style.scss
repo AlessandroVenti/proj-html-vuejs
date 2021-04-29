@@ -278,11 +278,20 @@ body {
                                              @include h3Design();
                                         }
 
+                                        h3.reportingTextInEvidence {
+                                             color: #377dff;
+                                        }
+
                                         p {
                                         @include pDesign();
                                         padding: 20px 0 25px 0 ;
                                         }
                                    }
+                              }
+
+                              div.icon-and-description.reportingInEvidence {
+                                   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                                   border: 1px solid #0000000d;
                               }
 
                               div.icon-and-description:hover {
@@ -504,7 +513,10 @@ body {
                     i {
                          margin-top: 20px;
                          font-size: 10px;
-                         color: blue;
+                    }
+
+                    i.activeDot {
+                         color: #377dff;
                     }
                }
 
