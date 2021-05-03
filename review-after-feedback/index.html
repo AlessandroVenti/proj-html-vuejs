@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- font awesame -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+     <!-- font -->
+     <link rel="preconnect" href="https://fonts.gstatic.com"> 
+     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.gstatic.com"> 
+     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+     <!-- vue -->
+     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+     <!-- CSS -->
+     <link rel="stylesheet" href="style.css">
+     <!-- Javascript -->
+     <script src="script.js"></script>
+
+     <title>Sofbox- Responsive Software Landing Page</title>
+</head>
+<body>
+     <div id="vueSofbox">
+
+                         <!-- NAVBAR WITH VUE -->
+          <header>
+               <a href="">
+                    <img :src='"img/" + logoImage' alt="">
+               </a>
+
+               <div>
+                                        <!-- ICONS HIGHLIGHTED WITH VUE -->
+                    <ul>
+                         <li class="listNav" v-for="(item, itemIndex) in navCenterList"> 
+                              <a @click="navEffectItem(itemIndex)" href="#iq-about"> {{item}}
+                                   <div :class="(activeItemIndex == itemIndex) ? 'blueLine': ''"></div> 
+                               </a> 
+                         </li>
+
+                                        <!-- SEARCHBAR AT CLICK WITH VUE -->
+
+                         <li class="search-bar" @click="navEffectInput">
+                              <input :class="{inputEffect : inputNavFlag}" type="text" placeholder="">
+                              <i class="fas fa-search"></i>
+                         </li>
+
+                                             <!-- SHOPPING CART AND COUNTER -->
+
+                         <li class="shopping-cart">
+                              <i class="fas fa-shopping-cart"></i>
+                              <div>
+                                  <span> {{shoppingCounter}} </span>
+                              </div>
+                         </li>
+                                        <!-- BUTTON AND HOVER -->
+                         <li>
+                              <button @click="increaseShoppingCart" type="submit">Get Started</button></li>
+                    </ul>
+               </div>
+
+          </header>
+
+          <main>
+                              <!-- JUMBOTRON SECTION -->
+
+               <section class="jumbotron">
+
+                    <div>
+                         <h1>The biggest platform for your growth. </h1>
+                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                         <button>Read More</button>
+                    </div>
+                    
+
+                    <div>
+                         <img src="img/27-1.png" alt=""> 
+                    </div>
+
+               </section>
+
+               <section class="onlineMarketing">
+
+                    <div class="marketing-box">
+                         <div class="image-marketing">
+                              <img src="img/24.png" alt="">
+                         </div>
+
+                         <div class="description-marketing">
+                              <h3>Online Marketing</h3>
+                              <p>It is a long established fact that a reader will be distracted.</p>
+                              <ul>
+                                   <li>
+                                        <i class="fa fa-check"></i>
+                                        <span> SEO</span>
+                                   </li>
+                                   <li>
+                                        <i class="fa fa-check"></i>
+                                        <span> SEM</span>
+                                   </li>
+                                   <li>
+                                        <i class="fa fa-check"></i>
+                                        <span>Website Strategy</span>
+                                   </li>
+                                   <li>
+                                        <i class="fa fa-check"></i>
+                                        <span>Social management</span>
+                                   </li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="marketing-box">
+                         <div class="image-marketing">
+                              <img src="img/24.png" alt="">
+                         </div>
+
+                         <div class="description-marketing">
+                              <h3>Online Marketing</h3>
+                              <p>It is a long established fact that a reader will be distracted.</p>
+                              <ul>
+                                   <li>
+                                        <i class="fa fa-check"></i>
+                                        <span> SEO</span>
+                                   </li>
+                                   <li>
+                                        <i class="fa fa-check"></i>
+                                        <span> SEM</span>
+                                   </li>
+                                   <li>
+                                        <i class="fa fa-check"></i>
+                                        <span>Website Strategy</span>
+                                   </li>
+                                   <li>
+                                        <i class="fa fa-check"></i>
+                                        <span>Social management</span>
+                                   </li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="marketing-box">
+                         <div class="image-marketing">
+                              <img src="img/24.png" alt="">
+                         </div>
+
+                         <div class="description-marketing">
+                              <h3>Online Marketing</h3>
+                              <p>It is a long established fact that a reader will be distracted.</p>
+                              <ul>
+                                   <li>
+                                        <i class="fa fa-check"></i>
+                                        <span> SEO</span>
+                                   </li>
+                                   <li>
+                                        <i class="fa fa-check"></i>
+                                        <span> SEM</span>
+                                   </li>
+                                   <li>
+                                        <i class="fa fa-check"></i>
+                                        <span>Website Strategy</span>
+                                   </li>
+                                   <li>
+                                        <i class="fa fa-check"></i>
+                                        <span>Social management</span>
+                                   </li>
+                              </ul>
+                         </div>
+                    </div>
+
+               </section>
+
+               <section class="reporting-analysis">
+
+                    <div class="analysis-box">
+
+                         <div class="left-part">
+
+                              <div>
+                                   <h2>Get tips tricks on how to skyrocket your sales.</h2>
+
+                                   <p>Faff about only a quid biower i don't want no agro bleeding chimney pot burke tosser cras nice one boot fanny.!</p>
+                              </div>
+
+                             <div @click="switchReportingAnalisys1" :class="(reportingAnalisysFlag == 0) ? 'reportingInEvidence' : ''"class="icon-and-description">
+                                   <img src="img/510.png" alt="">
+
+                                   <div>
+                                        <h3 :class="(reportingAnalisysFlag == 0) ? 'reportingTextInEvidence' : ''">Reporting analysis</h3>
+                                        <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+                                   </div>
+                              </div>
+
+                              <div @click="switchReportingAnalisys2" :class="(reportingAnalisysFlag == 1) ? 'reportingInEvidence' : ''" class="icon-and-description">
+                                   <img src="img/511.png" alt="">
+
+                                   <div>
+                                        <h3 :class="(reportingAnalisysFlag == 1) ? 'reportingTextInEvidence' : ''">Technical SEO Audit</h3>
+                                        <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="right-part">
+                              <img :src="'img/' + reportingAnalisysPhoto[reportingAnalisysFlag]" alt="">
+                         </div>
+
+                    </div>
+
+               </section>
+
+               <section class="popular-feature">
+
+                    <img src="img/14.png" alt="">
+
+                    <div class="flex-popular">
+
+                         <div class="first-part">
+                              <div>
+                                   <h2>Popular features that your business needs</h2>
+                                   <p>Faff about only a quid blower i don't want no agro bleeding chimney pot burke tosser cras nice one boot fanny.!</p>
+                              </div>
+
+                              <div>
+                                   <button>Explore more feature</button>
+                              </div>
+                         </div>
+
+                         <ul class="second-part">
+
+                              <li>
+                                   <h3>Customized invoices</h3>
+                                   <i class="fas fa-balance-scale"></i>
+                              </li>
+
+                              <li>
+                                   <h3>Stock Management</h3>
+                                   <i class="fas fa-tv"></i>
+                              </li>
+
+                              <li>
+                                   <h3>Receivable & Payables</h3>
+                                   <i class="far fa-envelope"></i>
+                              </li>
+
+                              <li>
+                                   <h3>Manage Buying</h3>
+                                   <i class="fas fa-map-marker-alt"></i>
+                              </li>
+                              
+                              <li>
+                                   <h3>Powerful & Secure</h3>
+                                   <i class="fas fa-user-tie"></i>
+                              </li>
+
+                              <li>
+                                   <h3>Fastest Return Filing</h3>
+                                   <i class="far fa-envelope"></i>
+                              </li>
+                              
+                              <li>
+                                   <h3>Monthly Detailed</h3>
+                                   <i class="fas fa-clipboard"></i>
+                              </li>
+
+                              <li>
+                                   <h3>Product Management</h3>
+                                   <i class="fas fa-lightbulb"></i>
+                              </li>
+                         </ul>
+                         
+                    </div>
+
+               </section>
+
+               <section class="testimonials">
+                    <h2>Our testimonials</h2>
+
+                    <p>if you are planning on developing a product landing app or website, take a look at this beautiful-crafted</p>
+
+                    <transition-group tag="div" :name="testimonialBoxCarousel.transitionName">
+                         <div :key="testimonialBoxCarousel.currentSlide" class="testimonials-box">
+                              <div>
+                                   <div>
+                                        <div class="real-box">
+                                             <img :src='"img/" + testimonialBoxCarousel.images[testimonialBoxCarousel.currentSlide]' alt="">
+                                             <div class="testimonials-description-box">
+                                                  <span>{{ testimonialBoxCarousel.names[testimonialBoxCarousel.currentSlide] }}</span>
+                                                  <span class="grey">{{ testimonialBoxCarousel.job[testimonialBoxCarousel.currentSlide] }}</span>
+                                                  <p>{{ testimonialBoxCarousel.description }}</p>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div :key="testimonialBoxCarousel.currentSlide + 1">
+                                   <div>
+                                        <div class="real-box">
+                                             <img :src='"img/" + testimonialBoxCarousel.images[testimonialBoxCarousel.currentSlide + 1]' alt="">
+                                             <div class="testimonials-description-box">
+                                                  <span>{{ testimonialBoxCarousel.names[testimonialBoxCarousel.currentSlide + 1] }}</span>
+                                                  <span class="grey">{{ testimonialBoxCarousel.job[testimonialBoxCarousel.currentSlide + 1] }}</span>
+                                                  <p>{{ testimonialBoxCarousel.description }}</p>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </transition-group>
+                    <i @click="switchTestimonialBox1" :class="(testimonialBoxCarousel.currentSlide == 0) ? 'activeDot' : ''" class="fas fa-circle"></i>
+                    <i @click="switchTestimonialBox2" :class="(testimonialBoxCarousel.currentSlide == 1) ? 'activeDot' : ''"class="fas fa-circle"></i>
+               </section>
+
+               <section class="latest-posts">
+                    <h2>Latest Posts</h2>
+                    <p>If you are planning on developing a product landing</p>
+                    <transition-group tag="div" :name="latestPostCarousel.transitionName">
+                         <div :key="latestPostCarousel.currentSlide">
+                              <div>
+                                   <img :src="'img/' + latestPostCarousel.images[latestPostCarousel.currentSlide]" alt="">
+                                   <div class="absolute-date">
+                                        <a href="">{{ latestPostCarousel.date }}</a>
+                                   </div>
+                                   <h3>{{ latestPostCarousel.title }}</h3>
+                                   <p>{{ latestPostCarousel.description }}</p>
+                              </div>
+
+                              <div>
+                                   <img :src="'img/' + latestPostCarousel.images[latestPostCarousel.currentSlide + 1]" alt="">
+                                   <div class="absolute-date">
+                                        <a href="">{{ latestPostCarousel.date }}</a>
+                                   </div>
+                                   <h3>{{ latestPostCarousel.title }}</h3>
+                                   <p>{{ latestPostCarousel.description }}</p>
+                              </div>
+
+                              <div>
+                                   <img :src="'img/' + latestPostCarousel.images[latestPostCarousel.currentSlide + 2]" alt="">
+                                   <div class="absolute-date">
+                                        <a href="">{{ latestPostCarousel.date }}</a>
+                                   </div>
+                                   <h3>{{ latestPostCarousel.title }}</h3>
+                                   <p>{{ latestPostCarousel.description }}</p>
+                              </div>
+                         </div>
+                    </transition-group>
+               </section>
+
+               <section class="contact">
+                    <h2>Contact with our team</h2>
+                    <p>if you are planning on developing a product landing.</p>
+                    <div>
+                         <div class="map-side">
+                              <img src="img/StaticMapService.GetMapIma.png" alt="">
+
+                              <div class="minimap-route">
+                                   <div>
+                                        <h4>Storey Ave</h4>
+                                        <h5>San Francisco, California 94129</h5>
+                                        <a href="">Visualizza mappa piu grande</a>
+                                   </div>
+                                   
+                                   <div>
+                                        <div>
+                                             <i class="fas fa-route"></i>
+                                             <h5>indicazi..</h5>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="minimap-pin">
+                                   <i class="fas fa-map-marker-alt"></i>
+                              </div>
+
+                              <div class="minimap-icon">
+                                   <i class="fas fa-map"></i>
+                              </div>
+
+                              <div class="minimap-more-less">
+                                   <i class="fas fa-plus"></i>
+                                   <i class="fas fa-minus"></i>
+                              </div>
+
+                              <div class="minimap-credits">
+                                   <span> Dati mappa ©2021</span>
+                                   <span><a href=""></a>Termini e condizioni d'uso</span>
+                                   <span><a href=""></a>Segnala un errore nella mappa</span>
+                              </div>
+
+                         </div>
+
+                         <div class="form-side">
+                              <img src="img/35.png" alt="">
+                              <h4>9840 Shore St. Fond Du Lac, WI 54935</h4>
+                              <h5>0 1223 456 789</h5>
+                              <h6>mail@sofbox.com</h6>
+                              <span>
+                                   <i class="fab fa-facebook-f"></i>
+                                   <i class="fab fa-twitter"></i>
+                                   <i class="fab fa-github"></i>
+                                   <i class="fab fa-instagram"></i>
+                              </span>
+                              <h3>Get in touch</h3>
+                              <form action="">
+                                   <div>
+                                        <input type="text" placeholder="Your Name">
+                                        <input type="text" placeholder="Your Email">
+                                   </div>
+                                   <input type="text" placeholder="Your Subject">
+                                   <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                                   <button type="submit">Send Message</button>
+                              </form>
+                         </div>
+
+                    </div>
+               </section>
+          </main>
+
+          <footer>
+
+               <div>
+               <img :src="'img/' + footerLogo" alt="">
+               <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+               <h6>Copyright @ 2018 <span>Sofbox</span></h6>
+               </div>
+
+               <div>
+                    <ul>
+                         <li>
+                              <strong>Menu</strong>
+                         </li>
+
+                         <li v-for="element in footerList1">
+                              <a href=""> {{element}} </a>
+                         </li>
+                    </ul>
+               </div>
+
+               <div>
+                    <ul>
+                         <li>
+                              <strong>About us</strong>
+                         </li>
+
+                         <li v-for="element in footerList2">
+                              <a href=""> {{element}} </a>
+                         </li>
+                    </ul>
+               </div>
+
+               <div>
+                    <ul>
+                         <li>
+                              <strong>Quick Links</strong>
+                         </li>
+
+                         <li v-for="element in footerList3">
+                              <a href=""> {{element}} </a>
+                         </li>
+                    </ul>
+               </div>
+
+               
+
+          </footer>
+
+     </div>
+     
+</body>
+</html>

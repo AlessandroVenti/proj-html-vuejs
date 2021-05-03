@@ -1,0 +1,995 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
+  text-decoration: none;
+  list-style-type: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body #vueSofbox {
+  background-color: rgba(255, 255, 255, 0.972);
+}
+body #vueSofbox header {
+  padding: 0 20.4%;
+  background-color: white;
+  border-bottom: 1px solid #00000014;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+body #vueSofbox header a img {
+  height: 50px;
+  flex-basis: auto;
+}
+body #vueSofbox header div ul li {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 17px;
+  line-height: 30px;
+  color: #8e989f;
+}
+body #vueSofbox header div ul li a {
+  color: #495057;
+  font-family: "Indie Flower", cursive;
+}
+body #vueSofbox header div ul li a div.blueLine {
+  border-bottom: 2px solid #377dff;
+  width: 100%;
+}
+body #vueSofbox header div ul .listNav div {
+  width: 0;
+  height: 1;
+}
+body #vueSofbox header div ul .listNav:hover div {
+  transition: 0.5s linear;
+  border-bottom: 2px solid #377dff;
+  width: 100%;
+}
+body #vueSofbox header div ul .listNav:hover a {
+  transition: 0.5s smooth;
+  color: #377dff;
+}
+body #vueSofbox header div ul .search-bar,
+body #vueSofbox header div ul .shopping-cart {
+  position: relative;
+}
+body #vueSofbox header div ul .search-bar input,
+body #vueSofbox header div ul .shopping-cart input {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  font-size: 20px;
+  padding: 0 20px;
+}
+body #vueSofbox header div ul .search-bar i.fa-search,
+body #vueSofbox header div ul .shopping-cart i.fa-search {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+}
+body #vueSofbox header div ul .search-bar i.fa-shopping-cart,
+body #vueSofbox header div ul .shopping-cart i.fa-shopping-cart {
+  z-index: 9;
+}
+body #vueSofbox header div ul .search-bar div,
+body #vueSofbox header div ul .shopping-cart div {
+  background-color: #377dff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0px;
+  right: -15px;
+  z-index: 8;
+  text-align: center;
+}
+body #vueSofbox header div ul .search-bar div span,
+body #vueSofbox header div ul .shopping-cart div span {
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: -7px;
+  right: 6px;
+}
+body #vueSofbox header div ul .search-bar .inputEffect {
+  border: 1px solid #377dff;
+  transition: 0.3s linear;
+  width: 200px;
+}
+body #vueSofbox header div ul button {
+  background-color: #377dff;
+  border: 1px solid #377dff;
+  color: #ffffff;
+  padding: 13px 22px;
+  border-radius: 5px;
+  margin-left: 40px;
+  font-size: 15px;
+}
+body #vueSofbox header div ul button:hover {
+  transition: 1s linear;
+  background-color: #1e1e1e;
+}
+body #vueSofbox main {
+  padding-top: 70px;
+  background-color: rgba(255, 255, 255, 0.972);
+}
+body #vueSofbox main section.jumbotron {
+  margin: 0 11%;
+  padding: 50px;
+  border-radius: 8px;
+  background-color: #f2f7ff;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body #vueSofbox main section.jumbotron div {
+  flex-basis: 50%;
+}
+body #vueSofbox main section.jumbotron div h1 {
+  font-size: 60px;
+  line-height: 86px;
+  font-weight: normal;
+}
+body #vueSofbox main section.jumbotron div p {
+  font-size: 17px;
+  line-height: 30px;
+  color: #8e989f;
+  margin: 25px 0;
+}
+body #vueSofbox main section.jumbotron div button {
+  background-color: #377dff;
+  border: 1px solid #377dff;
+  color: #ffffff;
+  padding: 13px 22px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+body #vueSofbox main section.jumbotron div button:hover {
+  transition: 1s linear;
+  background-color: #1e1e1e;
+}
+@-webkit-keyframes jumbo {
+  0% {
+    height: 500px;
+  }
+  25% {
+    height: 480px;
+  }
+  50% {
+    height: 460px;
+  }
+  75% {
+    height: 480px;
+  }
+  100% {
+    height: 500px;
+  }
+}
+@keyframes jumbo {
+  0% {
+    height: 500px;
+  }
+  25% {
+    height: 480px;
+  }
+  50% {
+    height: 460px;
+  }
+  75% {
+    height: 480px;
+  }
+  100% {
+    height: 500px;
+  }
+}
+body #vueSofbox main section.jumbotron div img {
+  -webkit-animation: jumbo 5s linear infinite;
+          animation: jumbo 5s linear infinite;
+}
+body #vueSofbox main section.jumbotron:hover img {
+  transition: 2s;
+  height: 300px;
+}
+body #vueSofbox main section.onlineMarketing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 120px 20.4% 0 20.4%;
+}
+body #vueSofbox main section.onlineMarketing div.marketing-box {
+  flex-basis: calc(100% / 3 - 20px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body #vueSofbox main section.onlineMarketing div.marketing-box div.image-marketing {
+  flex-basis: 20%;
+}
+body #vueSofbox main section.onlineMarketing div.marketing-box div.image-marketing img {
+  height: 80px;
+  width: auto;
+}
+body #vueSofbox main section.onlineMarketing div.marketing-box div.description-marketing {
+  flex-basis: 80%;
+  padding-left: 20px;
+}
+body #vueSofbox main section.onlineMarketing div.marketing-box div.description-marketing h3 {
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: normal;
+}
+body #vueSofbox main section.onlineMarketing div.marketing-box div.description-marketing p {
+  font-size: 17px;
+  line-height: 30px;
+  color: #8e989f;
+  margin: 20px 0;
+}
+body #vueSofbox main section.onlineMarketing div.marketing-box div.description-marketing ul li {
+  padding: 13px;
+}
+body #vueSofbox main section.onlineMarketing div.marketing-box div.description-marketing ul li i {
+  color: #377dff;
+}
+body #vueSofbox main section.onlineMarketing div.marketing-box div.description-marketing ul li span {
+  margin: 0 10px;
+  font-family: "Indie Flower", cursive;
+  font-size: 20px;
+}
+body #vueSofbox main section.reporting-analysis {
+  padding: 120px 20.4% 0 20.4%;
+}
+body #vueSofbox main section.reporting-analysis div.analysis-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div:first-child h2 {
+  font-weight: normal;
+  font-size: 37px;
+  line-height: 55px;
+}
+body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div:first-child p {
+  font-size: 17px;
+  line-height: 30px;
+  color: #8e989f;
+  padding: 20px 0 50px 0;
+}
+body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div.icon-and-description {
+  background-color: white;
+  padding: 15px 30px;
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div.icon-and-description img {
+  flex-basis: 10%;
+  height: 60px;
+  margin-top: 50px;
+}
+body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div.icon-and-description div {
+  padding: 0 20px;
+  flex-basis: 90%;
+}
+body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div.icon-and-description div h3 {
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: normal;
+}
+body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div.icon-and-description div h3.reportingTextInEvidence {
+  color: #377dff;
+}
+body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div.icon-and-description div p {
+  font-size: 17px;
+  line-height: 30px;
+  color: #8e989f;
+  padding: 20px 0 25px 0;
+}
+body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div.icon-and-description.reportingInEvidence {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid #0000000d;
+}
+body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div.icon-and-description:hover {
+  transition: 1s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid #0000000d;
+}
+body #vueSofbox main section.reporting-analysis div.analysis-box div.left-part div.icon-and-description:hover h3 {
+  transition: 1s;
+  color: #377dff;
+}
+body #vueSofbox main section.reporting-analysis div.analysis-box div.right-part {
+  margin-top: 100px;
+}
+body #vueSofbox main section.popular-feature {
+  position: relative;
+  z-index: 10;
+}
+@-webkit-keyframes bubble {
+  0% {
+    top: 0;
+    left: -350px;
+  }
+  25% {
+    top: -50px;
+    left: -350px;
+  }
+  50% {
+    top: -100px;
+    left: -350px;
+  }
+  60% {
+    top: -75px;
+    left: -350px;
+  }
+  75% {
+    top: -50px;
+    left: -350px;
+  }
+  100% {
+    top: 0;
+    left: -350px;
+  }
+}
+@keyframes bubble {
+  0% {
+    top: 0;
+    left: -350px;
+  }
+  25% {
+    top: -50px;
+    left: -350px;
+  }
+  50% {
+    top: -100px;
+    left: -350px;
+  }
+  60% {
+    top: -75px;
+    left: -350px;
+  }
+  75% {
+    top: -50px;
+    left: -350px;
+  }
+  100% {
+    top: 0;
+    left: -350px;
+  }
+}
+body #vueSofbox main section.popular-feature img {
+  position: absolute;
+  left: -350px;
+  top: 0;
+  -webkit-animation: bubble 5s linear infinite;
+  animation: bubble 5s linear infinite;
+  z-index:-1;
+
+}
+body #vueSofbox main section.popular-feature div.flex-popular {
+  padding: 120px 20.4% 0 20.4%;
+}
+body #vueSofbox main section.popular-feature div.flex-popular div.first-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+body #vueSofbox main section.popular-feature div.flex-popular div.first-part div:first-child {
+  flex-basis: 80%;
+}
+body #vueSofbox main section.popular-feature div.flex-popular div.first-part div:first-child h2 {
+  font-weight: normal;
+  font-size: 37px;
+  line-height: 55px;
+}
+body #vueSofbox main section.popular-feature div.flex-popular div.first-part div:first-child p {
+  font-size: 17px;
+  line-height: 30px;
+  color: #8e989f;
+  margin: 20px 0;
+  width: 65%;
+}
+body #vueSofbox main section.popular-feature div.flex-popular div.first-part div:last-child {
+  flex-basis: 20%;
+}
+body #vueSofbox main section.popular-feature div.flex-popular div.first-part div:last-child button {
+  background-color: #377dff;
+  border: 1px solid #377dff;
+  color: #ffffff;
+  padding: 13px 22px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+body #vueSofbox main section.popular-feature div.flex-popular div.first-part div:last-child button:hover {
+  transition: 1s linear;
+  background-color: #1e1e1e;
+}
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li {
+  display: inline-block;
+  flex-basis: calc(100% / 4 - 20px);
+  padding: 20px;
+  margin: 20px 0;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li h3 {
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: normal;
+}
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li i {
+  font-size: 40px;
+  margin: 20px 0 30px 0;
+}
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:first-child i,
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(4) i,
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(7) i {
+  color: #377dff;
+}
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(2) i,
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(5) i,
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(8) i {
+  color: #ff796d;
+}
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(3) i,
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(6) i {
+  color: #6cdac1;
+}
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:hover i, body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:hover h3 {
+  transition: 1s;
+  color: white;
+}
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:first-child:hover,
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(4):hover,
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(7):hover {
+  transition: 1s;
+  background-color: #387cfb;
+}
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(3):hover,
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(6):hover {
+  transition: 1s;
+  background-color: #6cdac1;
+}
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(2):hover,
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(5):hover,
+body #vueSofbox main section.popular-feature div.flex-popular ul.second-part li:nth-child(8):hover {
+  transition: 1s;
+  background-color: #ff796d;
+}
+body #vueSofbox main section.testimonials {
+  background-image: url(img/15.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #d9e3f5;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  padding: 120px 20.4% 0 20.4%;
+}
+
+body #vueSofbox main section.testimonials > div {
+  position:relative;
+  height: 345px;
+}
+
+body #vueSofbox main section.testimonials h2 {
+  font-weight: normal;
+  font-size: 37px;
+  line-height: 55px;
+}
+body #vueSofbox main section.testimonials p {
+  font-size: 17px;
+  line-height: 30px;
+  color: #8e989f;
+  padding: 15px 0 100px 0;
+  width: 45%;
+  margin: auto;
+}
+body #vueSofbox main section.testimonials div.testimonials-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+body #vueSofbox main section.testimonials div.testimonials-box div {
+  width: 500px;
+  height: 345px;
+  background-color: #fdfcfc;
+  border-bottom: 1px solid black;
+}
+body #vueSofbox main section.testimonials div.testimonials-box div > div {
+  width: 500px;
+  height: 335px;
+  border-bottom: 1px solid black;
+}
+body #vueSofbox main section.testimonials div.testimonials-box div > div > div.real-box {
+  width: 500px;
+  height: 325px;
+  border-bottom: 1px solid black;
+  padding: 35px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+body #vueSofbox main section.testimonials div.testimonials-box div > div > div.real-box img {
+  border-radius: 50%;
+  height: 60px;
+  width: auto;
+  margin-bottom: 10px;
+}
+body #vueSofbox main section.testimonials div.testimonials-box div > div > div.real-box div.testimonials-description-box {
+  background-color: transparent;
+  margin: 0;
+  border: 0;
+  font-size: 20px;
+}
+body #vueSofbox main section.testimonials div.testimonials-box div > div > div.real-box div.testimonials-description-box span.grey {
+  color: #8e989f;
+}
+body #vueSofbox main section.testimonials div.testimonials-box div > div > div.real-box div.testimonials-description-box p {
+  width: 100%;
+  font-family: "Indie Flower", cursive;
+  line-height: 50px;
+}
+body #vueSofbox main section.testimonials i {
+  margin-top: 20px;
+  font-size: 10px;
+}
+body #vueSofbox main section.testimonials i.activeDot {
+  color: #377dff;
+}
+body #vueSofbox main section.testimonials:before {
+  content: "";
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: -webkit-linear-gradient(top, rgba(217, 227, 245, 0) 0, #ffffff 60%);
+  z-index: -1;
+}
+
+body #vueSofbox main section.testimonials .carousel-next-enter-active,
+body #vueSofbox main section.testimonials .carousel-next-leave-active {
+  transition: all 1s ease-out;
+}
+
+body #vueSofbox main section.testimonials .carousel-next-enter {
+  transform: translate(100%);
+}
+
+body #vueSofbox main section.testimonials .carousel-next-leave-to {
+  transform: translate(-100%);
+  opacity: 0;
+}
+
+body #vueSofbox main section.latest-posts {
+  padding: 120px 20.4% 0 20.4%;
+  text-align: center;
+}
+body #vueSofbox main section.latest-posts h2 {
+  font-weight: normal;
+  font-size: 37px;
+  line-height: 55px;
+  margin-bottom: 30px;
+}
+body #vueSofbox main section.latest-posts p {
+  font-size: 17px;
+  line-height: 30px;
+  color: #8e989f;
+  margin-bottom: 100px;
+}
+
+body #vueSofbox main section.latest-posts div {
+  position: relative;
+  height: 403px;
+}
+
+body #vueSofbox main section.latest-posts div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+body #vueSofbox main section.latest-posts div > div div {
+  flex-basis: calc(100% / 3 - 20px);
+  border: 1px solid #00000014;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  text-align: left;
+  position: relative;
+}
+body #vueSofbox main section.latest-posts div > div div div.absolute-date {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 200px;
+  height: 35px;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+body #vueSofbox main section.latest-posts .post-carousel-next-enter-active,
+body #vueSofbox main section.latest-posts .post-carousel-next-leave-active {
+  transition: all 1.5s ease-out;
+}
+
+body #vueSofbox main section.latest-posts .post-carousel-next-enter {
+  transform: translate(100%);
+}
+
+body #vueSofbox main section.latest-posts .post-carousel-next-leave-to {
+  transform: translate(-100%);
+  opacity: 0;
+}
+body #vueSofbox main section.latest-posts div > div div div.absolute-date a {
+  color: #8e989f;
+}
+body #vueSofbox main section.latest-posts div > div div div.absolute-date a:hover {
+  transition: 1.5s;
+  color: #377dff;
+}
+body #vueSofbox main section.latest-posts div > div div img {
+  width: 100%;
+}
+body #vueSofbox main section.latest-posts div > div div h3 {
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: normal;
+  margin: 15px 0;
+}
+body #vueSofbox main section.latest-posts div > div div h3:hover {
+  transition: 0.5s linear;
+  color: #377dff;
+}
+body #vueSofbox main section.latest-posts div > div div p {
+  font-size: 17px;
+  line-height: 30px;
+  color: #8e989f;
+  margin: 0;
+}
+body #vueSofbox main section.latest-posts div > div div:hover {
+  transition: 1s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid #0000000d;
+}
+body #vueSofbox main section.contact {
+  padding: 120px 20.4% 0 20.4%;
+  padding-bottom: 100px;
+  text-align: center;
+  border-bottom: 1px solid #00000014;
+}
+body #vueSofbox main section.contact h2 {
+  font-weight: normal;
+  font-size: 37px;
+  line-height: 55px;
+}
+body #vueSofbox main section.contact p {
+  font-size: 17px;
+  line-height: 30px;
+  color: #8e989f;
+  padding-top: 15px;
+  margin-bottom: 100px;
+}
+body #vueSofbox main section.contact div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body #vueSofbox main section.contact div div {
+  flex-basis: calc(50% - 20px);
+}
+body #vueSofbox main section.contact div div.map-side {
+  position: relative;
+  max-height: 420px;
+}
+body #vueSofbox main section.contact div div.map-side img {
+  width: 100%;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-route {
+  border: 1px solid #00000014;
+  margin: 5px;
+  padding: 10px;
+  text-align: left;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-route div:first-child {
+  flex-basis: 90%;
+  margin-right: 30px;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-route div:first-child h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-route div:first-child h5 {
+  font-weight: normal;
+  color: #8e989f;
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-route div:first-child a {
+  font-size: 13px;
+  color: #377dff;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-route div:last-child {
+  flex-basis: 10%;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-route div:last-child div {
+  text-align: center;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-route div:last-child i, body #vueSofbox main section.contact div div.map-side div.minimap-route div:last-child h5 {
+  color: #377dff;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-route div:last-child i {
+  margin-bottom: 5px;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-route div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-pin {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-pin i {
+  font-size: 30px;
+  color: #ff796d;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-icon {
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+  color: #6cda6c;
+  background-color: black;
+  padding: 10px;
+  font-size: 20px;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-more-less {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-more-less i:first-child {
+  border-bottom: 1px solid #00000014;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-more-less i {
+  padding: 10px;
+  font-size: 20px;
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-credits {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+body #vueSofbox main section.contact div div.map-side div.minimap-credits span {
+  border-right: 1px solid #8e989f;
+  padding: 0 10px;
+  font-size: 10px;
+}
+body #vueSofbox main section.contact div div.form-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+body #vueSofbox main section.contact div div.form-side img {
+  width: 130px;
+  height: auto;
+  margin-bottom: 40px;
+}
+body #vueSofbox main section.contact div div.form-side h4 {
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: normal;
+  margin-bottom: 40px;
+  font-family: "Indie Flower", cursive;
+}
+body #vueSofbox main section.contact div div.form-side h5, body #vueSofbox main section.contact div div.form-side h6 {
+  font-size: 17px;
+  line-height: 30px;
+  color: #8e989f;
+  font-weight: normal;
+}
+body #vueSofbox main section.contact div div.form-side h6 {
+  margin-bottom: 40px;
+}
+body #vueSofbox main section.contact div div.form-side span i {
+  color: #377dff;
+  border: 1px solid #00000014;
+  padding: 10px 14px;
+  margin: 0 2px 30px 0;
+}
+body #vueSofbox main section.contact div div.form-side span i:hover {
+  transition: 1s linear;
+  color: white;
+  background-color: #387cfb;
+}
+body #vueSofbox main section.contact div div.form-side h3 {
+  font-weight: normal;
+  font-size: 23px;
+}
+body #vueSofbox main section.contact div div.form-side form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body #vueSofbox main section.contact div div.form-side form input, body #vueSofbox main section.contact div div.form-side form textarea {
+  font-size: 17px;
+  line-height: 30px;
+  color: #8e989f;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #eff1fe;
+}
+body #vueSofbox main section.contact div div.form-side form input:hover,
+body #vueSofbox main section.contact div div.form-side form textarea:hover {
+  transition: 0.5s linear;
+  border: 2px solid #387cfb;
+}
+body #vueSofbox main section.contact div div.form-side form button {
+  background-color: #377dff;
+  border: 1px solid #377dff;
+  color: #ffffff;
+  padding: 13px 22px;
+  border-radius: 5px;
+  width: 30%;
+  font-size: 15px;
+  margin: 10px 0;
+}
+body #vueSofbox main section.contact div div.form-side form button:hover {
+  transition: 1s linear;
+  background-color: #1e1e1e;
+}
+body #vueSofbox footer {
+  padding: 40px 20.4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body #vueSofbox footer div {
+  flex-basis: calc(100% / 4 - 80px);
+}
+body #vueSofbox footer div p, body #vueSofbox footer div h6 {
+  font-size: 17px;
+  line-height: 30px;
+  color: #8e989f;
+  margin-bottom: 50px;
+  font-weight: normal;
+}
+body #vueSofbox footer div p {
+  width: 100%;
+}
+body #vueSofbox footer div h6 span {
+  color: #377dff;
+}
+body #vueSofbox footer div h6 span:hover {
+  transition: 0.5s linear;
+  color: black;
+}
+body #vueSofbox footer div ul {
+  font-size: 22px;
+}
+body #vueSofbox footer div ul li:first-child {
+  padding-bottom: 20px;
+}
+body #vueSofbox footer div ul li:first-child strong {
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: normal;
+}
+body #vueSofbox footer div ul li {
+  padding: 5px 0;
+}
+body #vueSofbox footer div ul li a {
+  font-size: 17px;
+  line-height: 30px;
+  color: #8e989f;
+}
+body #vueSofbox footer div ul li a:hover {
+  transition: 0.5s linear;
+  color: #387cfb;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+
+  body #vueSofbox header {
+    padding: 0 10%;
+  }
+
+  body #vueSofbox main section.jumbotron {
+    margin: 0 6%;
+    padding: 50px;
+  }
+
+  body #vueSofbox main section.onlineMarketing {
+        padding: 120px 10% 0 10%;
+  }
+
+  body #vueSofbox main section.reporting-analysis {
+    padding: 120px 10% 0 10%;
+    
+  }
+
+  body #vueSofbox main section.popular-feature div.flex-popular {
+    padding: 120px 10% 0 10%;
+    
+  }
+
+  body #vueSofbox main section.testimonials {
+    padding: 120px 10% 0 10%;
+  }
+
+  body #vueSofbox main section.latest-posts {
+    padding: 120px 10% 0 10%;
+  }
+
+  body #vueSofbox main section.contact {
+    padding: 120px 10% 0 10%;
+  }
+
+  body #vueSofbox footer {
+    padding: 40px 10%;
+  }
+}
+
+/* @media screen and (max-width: 900px) and (min-width: 600px) {
+  body #vueSofbox header {
+    padding: 0 15%;
+  }
+} */
+
+/* @media (max-width: 1200px) AND (min-width: 998px) {
+}
+
+@media (max-width: 998px) AND (min-width: 768px) {
+}
+
+@media (max-width: 768px) {
+} */
